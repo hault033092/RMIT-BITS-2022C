@@ -1,18 +1,18 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react'
+import styled from 'styled-components'
 
 const Course = ({ image, title, GPA, percent }) => {
-    return (
-        <CourseContainer>
-          <CourseImage src={image} />
-          <CourseTextContainer>
-            <CourseTitle>{title}</CourseTitle>
-            <CourseGPA>{GPA}</CourseGPA>
-            <ProgressBAR value={percent} max="100" />
-          </CourseTextContainer>
-          <Percent>{percent}%</Percent>
-        </CourseContainer>
-      )
+  return (
+    <CourseContainer>
+      <CourseImage src={image} />
+      <CourseTextContainer>
+        <CourseTitle>{title}</CourseTitle>
+        <CourseGPA>{GPA}</CourseGPA>
+        <ProgressBAR value={percent} max='100' />
+      </CourseTextContainer>
+      <Percent>{percent}%</Percent>
+    </CourseContainer>
+  )
 }
 
 const CourseContainer = styled.div`
@@ -28,28 +28,28 @@ const CourseContainer = styled.div`
   width: 140%;
   border-radius: 1rem;
   height: 7rem;
-`;
+`
 
 const CourseImage = styled.img`
   height: 5rem;
   width: 5rem;
   border-radius: 1rem;
-`;
+`
 
 const CourseTextContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 18rem;
-`;
+`
 
 const CourseTitle = styled.h2`
   font-size: 1.4rem;
-`;
+`
 
 const CourseGPA = styled.h3`
   font-size: 0.9rem;
   margin-bottom: 0.6rem;
-`;
+`
 
 const ProgressBAR = styled.progress`
   border-radius: 0;
@@ -65,7 +65,7 @@ const ProgressBAR = styled.progress`
     background: linear-gradient(to right, #ff6a00, #ee0979);
     border-radius: 1rem;
   }
-`;
+`
 
 const Percent = styled.h2`
   background: #ee0979; /* fallback for old browsers */
@@ -81,7 +81,6 @@ const Percent = styled.h2`
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-`;
+`
 
 export default Course
-
