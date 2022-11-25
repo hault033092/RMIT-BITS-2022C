@@ -1,7 +1,8 @@
-import './App.css'
+import './app.css'
+import User from './Pages/User'
 
 function App() {
-  return <div></div>
+  <User/>
 }
 
 export default App
