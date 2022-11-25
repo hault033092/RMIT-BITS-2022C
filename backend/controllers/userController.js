@@ -50,7 +50,7 @@ const deleteUser = async (req, res) => {
 
 const updateUser = async (req, res) => {
     const {id} = req.body;
-    const foundUser = await UserModel.findOne({_id: id});
+    const foundUser = await User.findOne({_id: id});
     if(foundUser || foundUser.length == 0) {
         const response = await foundUser.updateOne({_id: id});
         res.status(301).json(response);
