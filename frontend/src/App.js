@@ -1,8 +1,7 @@
-import './app.css'
-import User from './Pages/User'
+import React from 'react'
+import styled from 'styled-components'
 
-function App() {
-  <User/>
+const App = () => {
+  return <div>App</div>
 }
-
 export default App
