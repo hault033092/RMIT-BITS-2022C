@@ -1,15 +1,15 @@
 import React from 'react'
-import "./app.css"
+import styled from 'styled-components'
 import EnglishPackage from '../Components/Course/EnglishPackage'
 import SideBar from '../Components/Course/SideBar'
 
 const User = () => {
   return (
     <Container>
-        <Card>
-            <SideBar/>
-            <EnglishPackage/>
-        </Card>
+      <Card>
+        <SideBar />
+        <EnglishPackage />
+      </Card>
     </Container>
   )
 }
@@ -22,7 +22,7 @@ const Container = styled.div`
   background: #ee0979;
   background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);
   background: linear-gradient(to right, #ff6a00, #ee0979);
-`;
+`
 
 const Card = styled.div`
   height: 90vh;
@@ -33,6 +33,6 @@ const Card = styled.div`
   -webkit-backdrop-filter: blur(14px);
   border-radius: 10px;
   display: flex;
-`;
+`
 
 export default User

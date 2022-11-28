@@ -1,41 +1,41 @@
-import React from "react"
-import styled from "styled-components"
-import { ImTwitch, ImBook } from "react-icons/im"
-import { FaSteam } from "react-icons/fa"
-import { IoLogoGameControllerB } from "react-icons/io"
-import AvatarImg from "frontend\src\assets"
-import Controller from "../assets/controller.png"
-import Link from "./Link"
+import React from 'react'
+import styled from 'styled-components'
+import { ImTwitch, ImBook } from 'react-icons/im'
+import { FaSteam } from 'react-icons/fa'
+import { IoLogoGameControllerB } from 'react-icons/io'
+import AvatarImg from '../../assets/AvatarImg.jpg'
+// import Controller from '../assets/controller.png'
+import Link from './Link'
 
 const SideBar = () => {
-    const defaultStyle = { fill: "url(#gradient)" };
-    return (
-        <SidebarContainer>
-        <ProfileContainer>
-            <Avatar src={AvatarImg} />
-            <Name>Nguyen Vu</Name>
-            <Title>English Learner</Title>
-        </ProfileContainer>
-        <LinksContainer>
-            <Link title="English Learner">
-            <ImTwitch style={defaultStyle} />
-            </Link>
-            <Link title="GPA">
-            <FaSteam style={defaultStyle} />
-            </Link>
-            <Link title="Biography">
-            <IoLogoGameControllerB style={defaultStyle} />
-            </Link>
-            <Link title="Library">
-            <ImBook style={defaultStyle} />
-            </Link>
-        </LinksContainer>
-        <ProBox>
-            <ProText>Join pro for free games.</ProText>
-            <Image src={Controller} />
-        </ProBox>
-        </SidebarContainer>
-    )
+  const defaultStyle = { fill: 'url(#gradient)' }
+  return (
+    <SidebarContainer>
+      <ProfileContainer>
+        <Avatar src={AvatarImg} />
+        <Name>Nguyen Vu</Name>
+        <Title>English Learner</Title>
+      </ProfileContainer>
+      <LinksContainer>
+        <Link title='English Learner'>
+          <ImTwitch style={defaultStyle} />
+        </Link>
+        <Link title='GPA'>
+          <FaSteam style={defaultStyle} />
+        </Link>
+        <Link title='Biography'>
+          <IoLogoGameControllerB style={defaultStyle} />
+        </Link>
+        <Link title='Library'>
+          <ImBook style={defaultStyle} />
+        </Link>
+      </LinksContainer>
+      <ProBox>
+        <ProText>Join pro for free games.</ProText>
+        {/* <Image src={Controller} /> */}
+      </ProBox>
+    </SidebarContainer>
+  )
 }
 
 const SidebarContainer = styled.div`
@@ -47,7 +47,7 @@ const SidebarContainer = styled.div`
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   /* border-right: 1px solid #e7e7e7; */
-`;
+`
 
 const ProfileContainer = styled.div`
   display: flex;
@@ -56,28 +56,28 @@ const ProfileContainer = styled.div`
   flex-direction: column;
   height: 25%;
   padding: 3rem 0 1rem 0;
-`;
+`
 
 const Avatar = styled.img`
   height: 7rem;
   border-radius: 5rem;
-`;
+`
 
 const Name = styled.h1`
   color: #a53b11;
   font-size: 1.3rem;
   margin: 1rem 0 0.2rem 0;
-`;
+`
 
 const Title = styled.h2`
   color: #a53b11;
   font-size: 1rem;
-`;
+`
 
 const LinksContainer = styled.div`
   padding-left: 5rem;
   margin: 2rem 0;
-`;
+`
 
 const ProBox = styled.div`
   background: #ee0979; /* fallback for old browsers */
@@ -99,16 +99,16 @@ const ProBox = styled.div`
   border-radius: 1rem;
   padding: 1rem;
   margin: auto auto;
-`;
+`
 
 const ProText = styled.span`
   color: #e7e7e7;
   font-weight: bolder;
-`;
+`
 
 const Image = styled.img`
   height: 4rem;
   transform: rotate(-60deg);
-`;
+`
 
 export default SideBar
