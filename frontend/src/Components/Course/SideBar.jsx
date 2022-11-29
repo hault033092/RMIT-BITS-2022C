@@ -1,8 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import { ImTwitch, ImBook } from 'react-icons/im'
-import { FaSteam } from 'react-icons/fa'
-import { IoLogoGameControllerB } from 'react-icons/io'
+import { ImBook } from 'react-icons/im'
+import {IoIosSchool} from 'react-icons/io'
+import { FaUser } from 'react-icons/fa'
+import { IoPodium } from 'react-icons/io5'
 import AvatarImg from '../../assets/AvatarImg.jpg'
 // import Controller from '../assets/controller.png'
 import Link from './Link'
@@ -18,20 +19,20 @@ const SideBar = () => {
       </ProfileContainer>
       <LinksContainer>
         <Link title='English Learner'>
-          <ImTwitch style={defaultStyle} />
+          <IoIosSchool style={defaultStyle} />
         </Link>
         <Link title='GPA'>
-          <FaSteam style={defaultStyle} />
+          <IoPodium style={defaultStyle} />
         </Link>
         <Link title='Biography'>
-          <IoLogoGameControllerB style={defaultStyle} />
+          <FaUser style={defaultStyle} />
         </Link>
         <Link title='Library'>
           <ImBook style={defaultStyle} />
         </Link>
       </LinksContainer>
       <ProBox>
-        <ProText>Join pro for free games.</ProText>
+        <ProText>Buy more packages.</ProText>
         {/* <Image src={Controller} /> */}
       </ProBox>
     </SidebarContainer>
