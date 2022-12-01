@@ -8,6 +8,7 @@ import AvatarImg from '../../assets/AvatarImg.jpg'
 // import Controller from '../assets/controller.png'
 import Link from './Link'
 
+//This is the Sidebar for the User Detail page
 const SideBar = () => {
   const defaultStyle = { fill: 'url(#gradient)' }
   return (

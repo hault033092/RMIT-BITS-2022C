@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
+//This is the Link configuration for the icons and packages links of the user profile page
 const Link = ({ title, children }) => {
   return (
     <LinkContainer>
