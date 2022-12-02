@@ -1,10 +1,10 @@
-const router = express.Router()
+const router = require('express').Router()
 const User = require('../models/user.model')
 const jwt = require('jsonwebtoken')
 const bcrypt = require('bcryptjs')
 const verify = require('../helpers/verifyToken')
 const uploadImg = require('../helpers/uploadImg')
-const { registerValidation, loginValidation } = require('../helper/validation')
+const { registerValidation, loginValidation } = require('../helpers/validation')
 
 // User creation with validation
 router.post('/signup', async (req, res) => {
@@ -122,7 +122,7 @@ router.put('/updateProfile/:userId', verify, async (req, res) => {
 })
 
 // Upload profile image to cloudinary
-router.post('/uploadImage', upload.single('image'), async (req, res) => {
+router.post('/uploadImage', uploadImg.single('image'), async (req, res) => {
   const userImg = new User({
     profileImg: req.file.path,
   })
@@ -221,4 +221,4 @@ router.patch(
 
 /*Long Boi's relic*/
 
-module.export = router
+module.exports = router

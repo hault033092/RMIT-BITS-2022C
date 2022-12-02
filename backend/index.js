@@ -5,7 +5,7 @@ const cors = require('cors')
 require('dotenv/config')
 
 //Routes
-const userRoute = require('./routes/users.routes')
+const userRoute = require('./routes/user.routes')
 
 //Middlewares
 app.use(cors())
@@ -15,4 +15,4 @@ app.use('/api/user', userRoute)
 
 //Server Config
 app.listen(8080, () => console.log('Port listened!'))
-mongoose.connect(process.env, () => console.log('DB connected!'))
+mongoose.connect(process.env.DB_CONNECTION, () => console.log('DB connected!'))

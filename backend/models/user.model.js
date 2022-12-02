@@ -1,6 +1,6 @@
-import mongoose from 'mongoose'
+const mongoose = require('mongoose')
 
-const UserSchema = new mongoose.Schema(
+const userSchema = new mongoose.Schema(
   {
     email: {
       type: String,
@@ -26,14 +26,16 @@ const UserSchema = new mongoose.Schema(
     // Learner
     coursesTaken: [
       {
-        type: mongoose.Types.ObjectID,
+        type: mongoose.Types.ObjectId,
+        ref: 'Course',
       },
     ],
 
     // Teacher
     coursesUploaded: [
       {
-        type: mongoose.Types.ObjectID,
+        type: mongoose.Types.ObjectId,
+        ref: 'Course',
       },
     ],
   },
@@ -42,4 +44,4 @@ const UserSchema = new mongoose.Schema(
   }
 )
 
-export default mongoose.model('User', UserSchema)
+module.exports = mongoose.model('User', userSchema)
