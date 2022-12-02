@@ -6,6 +6,7 @@ import IELTS_image from '../../assets/IELTS_image.png'
 import SAT_image from '../../assets/SAT_image.png'
 import Cambridge_C2_Image from '../../assets/Cambridge_C2_Image.jpg'
 
+//This is the Styling for each of the English package box on the right of the User Profile Page
 const EnglishPackage = () => {
   return (
     <EnglishPackageContainer>
