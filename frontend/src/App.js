@@ -1,11 +1,13 @@
 import React from 'react'
-import styled from 'styled-components'
+import './app.css'
+import CourseInfo from './Pages/CourseInfo'
 import User from './Pages/User'
 
 const App = () => {
   return (
     <div>
-      <User />
+      {/* <User /> */}
+      <CourseInfo />
     </div>
   )
 }
