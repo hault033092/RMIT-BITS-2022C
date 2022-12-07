@@ -24,7 +24,6 @@ const Heading = styled.h1`
 
 	@media screen and (min-width: 600px) {
 		font-size: 2rem;
-		text-align: left;
 	}
 
 	@media screen and (min-width: 1200px) {
@@ -41,7 +40,6 @@ const SubHeading = styled.h2`
 
 	@media screen and (min-width: 600px) {
 		font-size: 1rem;
-		text-align: left;
 	}
 
 	@media screen and (min-width: 1200px) {
