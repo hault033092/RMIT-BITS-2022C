@@ -22,6 +22,7 @@ const Section = styled.div`
 	margin: 2rem 0;
 	border-radius: 1rem;
 	background-color: #ffffff;
+	box-shadow: 0 1rem 3rem 0 #000000;
 
 	@media screen and (min-width: 1200px) {
 		justify-content: space-between;

@@ -19,7 +19,10 @@ const Container = styled.div`
 	align-items: center;
 	flex-direction: column;
 	padding: 1rem 2rem;
-	background: linear-gradient(to right, #0096ff, #7cfc00);
+	// background-color: rgba(0, 150, 255, 0.65);
+	// background-color: #89cff0;
+	// background: linear-gradient(#7cfc00, #0096ff);
+	background: linear-gradient(to right, #65dfc9, #6cdbeb);
 `
 
 export default CourseInfo
