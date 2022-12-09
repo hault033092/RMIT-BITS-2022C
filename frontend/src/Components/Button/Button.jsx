@@ -37,8 +37,8 @@ const StyledButton = styled.button.attrs(({ disabled }) => ({
 		rgba(230, 0, 40, 1) 0%
 	);
 	&:before {
-		height: 5%;
-		width: 6px;
+		height: 0%;
+		width: 2px;
 	}
 
 	&:hover {
@@ -80,7 +80,7 @@ Button.defaultProps = {
 		fontSize: "1vw",
 		fontWeight: "500",
 		textAlign: "center",
-		borderRadius: "15px",
+		borderRadius: "10px",
 	},
 	hiddenHoverStyle: false,
 };
