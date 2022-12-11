@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import styled, { css } from 'styled-components'
 import emailjs from 'email-js'
 import Button from '../Components/Button'
+import Header from '../Components/Header/Header'
 
 const ContactUs = () => {
   const [state, setState] = useState(initalState)
@@ -44,6 +45,7 @@ const ContactUs = () => {
 
   return (
     <>
+      <Header/>
       <StyledFormWrapper>
         <StyledForm onSubmit={sendEmail}>
           <h2>Contact Particeps Development Team</h2>
