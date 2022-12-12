@@ -18,7 +18,7 @@ const Container = styled.div`
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	padding: 1rem 2rem;
+	padding: 2rem;
 	// background-color: rgba(0, 150, 255, 0.65);
 	// background-color: #89cff0;
 	// background: linear-gradient(#7cfc00, #0096ff);

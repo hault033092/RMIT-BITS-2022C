@@ -5,7 +5,7 @@ const CourseTitle = ({ title, subtitle }) => {
 	return (
 		<Container>
 			<Heading>{title}</Heading>
-			<SubHeading>{subtitle}</SubHeading>
+			{subtitle ? <SubHeading>{subtitle}</SubHeading> : null}
 		</Container>
 	)
 }

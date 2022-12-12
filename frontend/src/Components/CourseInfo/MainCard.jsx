@@ -19,7 +19,7 @@ const Section = styled.div`
 	justify-content: center;
 	flex-direction: column-reverse;
 	padding: 1rem;
-	margin: 2rem 0;
+	margin: 0 0 2rem 0;
 	border-radius: 1rem;
 	background-color: #ffffff;
 	box-shadow: 0 1rem 3rem 0 #000000;

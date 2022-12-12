@@ -15,9 +15,10 @@ const Container = styled.div`
 	display: flex;
 	align-items: center;
 	background-color: #ffffff;
+	padding: 0.5rem;
 	border-radius: 1rem;
 	border: 1px solid rgba(255, 255, 255, 0.25);
-	padding: 0.5rem;
+	box-shadow: 0 5px 15px 0 #000000;
 `
 
 const Icon = styled.p`

@@ -19,8 +19,9 @@ const LearningObjectivesCard = () => {
 const Section = styled.div`
 	width: 100%;
 	display: flex;
+	justify-content: space-between;
 	flex-direction: column;
-	margin: 1rem 0;
+	margin: 1rem 0 0 0;
 `
 
 const Title = styled.h1`
@@ -44,14 +45,12 @@ const Container = styled.div`
 	width: 100%;
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: repeat(4, 1fr);
 	gap: 1rem;
-	margin: 2rem 0;
+	margin: 2rem 0 0 0;
 	border-radius: 1rem;
 
 	@media screen and (min-width: 600px) {
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr;
 	}
 `
 
