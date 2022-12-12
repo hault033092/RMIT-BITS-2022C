@@ -2,13 +2,13 @@ import React, { useState, useEffect, useContext } from "react";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import { CurrentUserContext } from "../../contexts/CurrentUser";
+import { CurrentUserContext } from "../context/CurrentUser";
 import jwt from "jwt-decode";
 
 /* Components */
-import Input from "../../components/Input";
-import Button from "../../components/Button";
-import AccPageTemplate from "../../components/AccPageTemplate";
+import Input from "../Components/Account/Input";
+import Button from "../Components/Button";
+import AccPageTemplate from "../Components/Account/AccPageTemplate";
 
 /* Styled Components */
 const StyledText = styled.p`

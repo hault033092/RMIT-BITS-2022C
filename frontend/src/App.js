@@ -1,7 +1,9 @@
 import React from 'react'
 import './app.css'
+import Header from './Components/Header/Header'
 import ContactUs from './Pages/ContactUs'
 import CourseInfo from './Pages/CourseInfo'
+import Signin from './Pages/Signin'
 import User from './Pages/User'
 
 const App = () => {
@@ -9,7 +11,9 @@ const App = () => {
     <div>
       {/* <User /> */}
       {/* <CourseInfo /> */}
-      <ContactUs/>
+      {/* <ContactUs/> */}
+      {/* <Header/> */}
+      <Signin/>
     </div>
   )
 }
