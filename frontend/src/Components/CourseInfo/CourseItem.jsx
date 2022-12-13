@@ -36,6 +36,7 @@ const Container = styled.div`
 	border-radius: 1rem;
 	padding: 1rem;
 	background-color: #ffffff;
+	box-shadow: 0 1rem 2rem 0 #000000;
 `
 
 const CourseMainDetails = styled.div`

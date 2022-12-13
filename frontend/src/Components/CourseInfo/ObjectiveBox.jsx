@@ -18,7 +18,7 @@ const Container = styled.div`
 	padding: 0.5rem;
 	border-radius: 1rem;
 	border: 1px solid rgba(255, 255, 255, 0.25);
-	box-shadow: 0 5px 15px 0 #000000;
+	box-shadow: 0 0.5rem 1rem 0 #000000;
 `
 
 const Icon = styled.p`
