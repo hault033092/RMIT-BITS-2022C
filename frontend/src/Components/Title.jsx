@@ -1,9 +1,9 @@
 import React from "react"
 import styled from "styled-components"
 
-const CourseTitle = ({ title, subtitle }) => {
+const Title = ({ style, title, subtitle }) => {
 	return (
-		<Container>
+		<Container style={style}>
 			<Heading>{title}</Heading>
 			{subtitle ? <SubHeading>{subtitle}</SubHeading> : null}
 		</Container>
@@ -15,16 +15,7 @@ const Container = styled.div`
 	display: flex;
 	flex-direction: column;
 	margin: 0 0 2rem 0;
-`
-
-const Heading = styled.h1`
-	font-size: 1.6rem;
-	font-weight: 900;
 	text-align: center;
-
-	@media screen and (min-width: 600px) {
-		font-size: 2rem;
-	}
 
 	@media screen and (min-width: 1200px) {
 		font-size: 2.4rem;
@@ -32,10 +23,22 @@ const Heading = styled.h1`
 	}
 `
 
+const Heading = styled.h1`
+	font-size: 1.6rem;
+	font-weight: 900;
+
+	@media screen and (min-width: 600px) {
+		font-size: 2rem;
+	}
+
+	@media screen and (min-width: 1200px) {
+		font-size: 2.4rem;
+	}
+`
+
 const SubHeading = styled.h2`
 	font-size: 0.8rem;
 	font-weight: 400;
-	text-align: center;
 	margin: 1rem 0;
 
 	@media screen and (min-width: 600px) {
@@ -44,8 +47,7 @@ const SubHeading = styled.h2`
 
 	@media screen and (min-width: 1200px) {
 		font-size: 1.2rem;
-		text-align: left;
 	}
 `
 
-export default CourseTitle
+export default Title
