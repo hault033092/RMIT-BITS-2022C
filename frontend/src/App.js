@@ -12,8 +12,8 @@ const App = () => {
     <div>
       {/* <User /> */}
       <CourseInfo />
-      {/* <ContactUs/> */}
-      {/* <Header/> */}
+      <ContactUs/>
+      <Header/>
       <Signin/>
       <CourseList />
     </div>
