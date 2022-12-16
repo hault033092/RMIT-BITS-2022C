@@ -30,10 +30,10 @@ const StyledButton = styled.button.attrs(({ disabled }) => ({
 		7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
 	outline: none;
 
-	background: rgb(230, 0, 40);
+	background: rgb(230, 0, 0);
 	background: linear-gradient(
 		0deg,
-		rgba(230, 0, 40, 1) 0%,
+		#e60000 0%,
 		rgba(230, 0, 40, 1) 0%
 	);
 	&:before {
