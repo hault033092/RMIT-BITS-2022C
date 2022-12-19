@@ -1,125 +1,74 @@
-import React, { useState } from "react"
-import { Link } from "react-router-dom"
-import styled from "styled-components"
-import ParticepsLogo from "../../assets/particeps_final_logo.png"
+import React, { useState } from 'react'
+import { useRef } from 'react'
+import { NavLink } from 'react-router-dom'
+import styled from 'styled-components'
+import ParticepsLogo from '../../assets/particeps_final_logo.png'
+import Hamburger from './Hamburger'
+import HiddenNav from './HiddenNav'
+import Links from './Links'
+import { useOnClickOutside } from '../../hooks/useOnClickOutside'
 
 const Header = () => {
-  const [extendNavbar, setExtendNavbar] = useState(false)
+  const [open, setOpen] = useState(false)
+  const node = useRef()
+  useOnClickOutside(node, () => setOpen(false))
 
   return (
-    <NavbarContainer extendNavbar={extendNavbar}>
-      <NavbarInnerContainer>
-        <LeftContainer>
-          <NavbarLinkContainer>
-            <NavbarLink to="/"> Home</NavbarLink>
-            <NavbarLink to="/Survey"> Particeps Survey</NavbarLink>
-            <NavbarLink to="/ContactUs"> Contact Us</NavbarLink>
-            <NavbarLink to="/AccountInfo"> Account Info</NavbarLink>
-            <OpenLinksButton
-              onClick={() => {
-                setExtendNavbar((curr) => !curr);
-              }}
-            >
-              {extendNavbar ? <>&#10005;</> : <> &#8801;</>}
-            </OpenLinksButton>
-          </NavbarLinkContainer>
-        </LeftContainer>
-        <RightContainer>
-          <Logo src={ParticepsLogo}></Logo>
-        </RightContainer>
-      </NavbarInnerContainer>
-      {extendNavbar && (
-        <NavbarExtendedContainer>
-          <NavbarLinkExtended to="/"> Home</NavbarLinkExtended>
-          <NavbarLinkExtended to="/products"> Products</NavbarLinkExtended>
-          <NavbarLinkExtended to="/contact"> Contact Us</NavbarLinkExtended>
-          <NavbarLinkExtended to="/about"> About Us</NavbarLinkExtended>
-        </NavbarExtendedContainer>
-      )}
-    </NavbarContainer>
+    <>
+      <Container>
+        <HeaderLeft>
+          <Links path={'/'} pageName={'CONTACT US'} />
+          <Links path={'/contactus'} pageName={'CONTACT US'} />
+        </HeaderLeft>
+        <HeaderCenter>
+          <NavLink to='/'>
+            <img
+              src={ParticepsLogo}
+              style={{ width: '100px', height: '100px' }}
+            />
+          </NavLink>
+        </HeaderCenter>
+        <HeaderRight>
+          <Links path={'/contactus'} pageName={'CONTACT US'} />
+          <Links path={'/contactus'} pageName={'CONTACT US'} />
+        </HeaderRight>
+      </Container>
+      {/* <BurgerContainer ref={open}>
+        <Hamburger open={open} setOpen={setOpen} />
+      </BurgerContainer> */}
+
+      {/* <HiddenNavContainer ref={open}>
+        <HiddenNav open={open} setOpen={setOpen} />
+      </HiddenNavContainer> */}
+    </>
   )
-};
+}
 
-const NavbarContainer = styled.nav`
-  width: 100%;
-  height: ${(props) => (props.extendNavbar ? "100vh" : "80px")};
-  background-color: black;
+const Container = styled.div`
+  border: 1px solid black;
   display: flex;
-  flex-direction: column;
-  @media (min-width: 700px) {
-    height: 80px;
-  }
-`;
-
-const LeftContainer = styled.div`
-  flex: 70%;
-  display: flex;
+  justify-content: space-around;
   align-items: center;
-  padding-left: 5%;
-`;
-
-const RightContainer = styled.div`
-  flex: 30%;
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 50px;
-`;
-
-const NavbarInnerContainer = styled.div`
+  height: 8rem;
   width: 100%;
-  height: 80px;
+`
+
+const HeaderLeft = styled.div`
   display: flex;
-`;
+  justify-content: space-between;
+  width: 15rem;
+`
 
-const NavbarLinkContainer = styled.div`
+const HeaderCenter = styled.div``
+
+const HeaderRight = styled.div`
   display: flex;
-`;
+  justify-content: space-between;
+  width: 15rem;
+`
 
-const NavbarLink = styled(Link)`
-  color: white;
-  font-size: x-large;
-  font-family: Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  margin: 10px;
-  @media (max-width: 700px) {
-    display: none;
-  }
-`;
+const BurgerContainer = styled.div``
 
-const NavbarLinkExtended = styled(Link)`
-  color: white;
-  font-size: x-large;
-  font-family: Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  margin: 10px;
-`;
-
-const Logo = styled.img`
-  margin: 10px;
-  max-width: 180px;
-  height: auto;
-`;
-
-const OpenLinksButton = styled.button`
-  width: 70px;
-  height: 50px;
-  background: none;
-  border: none;
-  color: white;
-  font-size: 45px;
-  cursor: pointer;
-  @media (min-width: 700px) {
-    display: none;
-  }
-`;
-
-const NavbarExtendedContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  @media (min-width: 700px) {
-    display: none;
-  }
-`;
+const HiddenNavContainer = styled.div``
 
 export default Header

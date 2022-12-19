@@ -34,18 +34,26 @@ const ContactUs = () => {
   const sendEmail = (e) => {
     e.preventDefault()
 
-    emailjs.sendForm('service_b8l4lff', 'template_8vgw0ab', e.target, 'xA06NoX_nYna9TCy9')
-    .then((result) => {
-        console.log('SUCCESS!', result.status, result.text)
-    }, (error) => {
-        console.log(error.text)
-    })
+    emailjs
+      .sendForm(
+        'service_b8l4lff',
+        'template_8vgw0ab',
+        e.target,
+        'xA06NoX_nYna9TCy9'
+      )
+      .then(
+        (result) => {
+          console.log('SUCCESS!', result.status, result.text)
+        },
+        (error) => {
+          console.log(error.text)
+        }
+      )
     e.target.reset()
   }
 
   return (
     <>
-      <Header/>
       <StyledFormWrapper>
         <StyledForm onSubmit={sendEmail}>
           <h2>Contact Particeps Development Team</h2>
@@ -81,7 +89,7 @@ const ContactUs = () => {
               <p>{error}</p>
             </StyledError>
           )}
-          <Button/>
+          <Button />
         </StyledForm>
       </StyledFormWrapper>
     </>
