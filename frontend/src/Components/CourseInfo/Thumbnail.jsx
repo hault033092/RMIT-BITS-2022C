@@ -3,16 +3,28 @@ import styled from "styled-components"
 import ThumbnailImg from "../../assets/thumbnail.jpeg"
 
 const Thumbnail = () => {
-	return <Image src={ThumbnailImg}></Image>
+	return (
+		<Container>
+			<ImageContainer src={ThumbnailImg}></ImageContainer>
+		</Container>
+	)
 }
 
-const Image = styled.img`
+const Container = styled.div`
 	width: 100%;
+	display: flex;
+	flex-direction: column;
+
+	@media screen and (min-width: 1200px) {
+		width: 40%;
+	}
+`
+
+const ImageContainer = styled.img`
 	border-radius: 2rem;
 	margin: 0 0 2rem 0;
 
 	@media screen and (min-width: 1200px) {
-		width: 40%;
 		margin: 0;
 	}
 `

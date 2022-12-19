@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-const CourseRating = ({ rating }) => {
+const Rating = ({ rating }) => {
 	return (
 		<Container>
 			&#11088; &nbsp;
@@ -24,4 +24,4 @@ const Container = styled.p`
 	}
 `
 
-export default CourseRating
+export default Rating
