@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import AccPageTemplate from "../../components/AccPageTemplate";
-import Verification from "./Verification";
-import CreateAccount from "./CreateAccount";
+import AccPageTemplate from "../Components/Account/AccPageTemplate";
+import Verification from "../Components/Account/Verification";
+import CreateAccount from "../Components/Account/Verification";
 
-const Signup = () => {
+const SignUp = () => {
 	const [confirmedEmail, setConfirmedEmail] = useState("s123456@rmit.edu.vn");
 	const [isVisible, setIsVisible] = useState(false);
 
@@ -31,4 +31,4 @@ const Signup = () => {
 	);
 };
 
-export default Signup;
+export default SignUp;

@@ -128,7 +128,7 @@ const Signin = () => {
 				<Input
 					label={"Email"}
 					value={email}
-					placeholder={"Please enter your student email"}
+					placeholder={"Please enter your email"}
 					maxLength={30}
 					onChange={_handleEmailChange}
 				/>

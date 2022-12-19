@@ -6,14 +6,15 @@ import CourseInfo from './Pages/CourseInfo'
 import Signin from './Pages/Signin'
 import User from './Pages/User'
 import CourseList from './Pages/CourseList'
+import SignUp from './Pages/SignUp'
 
 const App = () => {
   return (
     <div>
-      {/* <User /> */}
+      <SignUp/>
       <CourseInfo />
-      {/* <ContactUs/> */}
-      {/* <Header/> */}
+      <ContactUs/>
+      <Header/>
       <Signin/>
       <CourseList />
     </div>

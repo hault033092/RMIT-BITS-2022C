@@ -8,12 +8,10 @@ import Spinner from "./Spinner";
 import Image from "./Image";
 
 /* Data */
-import EnglishBook from "../../assets/English_Book_image.svg"
+import Interactive_Interface from "../../assets/illustration/Interactive_Interface.svg"
 import MainLogoSrc from "../../assets/particeps_final_logo_adobe_express.svg";
-import logoNoTitle from "../../assets/illustration/logoNoTitle.svg";
-import getTeammates from "../../assets/illustration/getTeammates.svg";
-import sendMessage from "../../assets/illustration/sendMessage.svg";
-import createReview from "../../assets/illustration/createReview.svg";
+import learning_English from "../../assets/illustration/learning_English.svg";
+import Quiz from "../../assets/illustration/Quiz.svg";
 
 /* Styled Components */
 const MainCont = styled(FlexContainer)`
@@ -104,7 +102,7 @@ const AutoSlideshow = ({ images, delayTime }) => {
 	const [currentIdx, setCurrentIdx] = React.useState(0);
 	const timeoutRef = React.useRef(null);
 
-	const ImgStyle = { width: "100%", height: "100%", filter: "brightness(20%)" };
+	const ImgStyle = { width: "100%", height: "100%", filter: "brightness(40%)" };
 
 	const resetTimeout = () => {
 		if (timeoutRef.current) {
@@ -159,12 +157,12 @@ const AutoSlideshow = ({ images, delayTime }) => {
 
 /* Data */
 const imagesData = [
-	{ src: logoNoTitle, desc: "An interactive\nlearning website" },
-	{ src: getTeammates, desc: "Ask help\n about English learning!" },
-	{ src: sendMessage, desc: "Send message!" },
+	{ src: MainLogoSrc, desc: "An interactive\nlearning website" },
+	{ src: learning_English, desc: "Choose from different courses!" },
+	{ src: Interactive_Interface, desc: "Different UI\nfor visual and text learners" },
 	{
-		src: createReview,
-		desc: "Create a course review!",
+		src: Quiz,
+		desc: "Test your knowledge!",
 	},
 ];
 

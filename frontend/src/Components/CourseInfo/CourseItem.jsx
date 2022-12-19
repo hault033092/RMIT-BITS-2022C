@@ -1,14 +1,16 @@
 import React from "react"
 import styled from "styled-components"
 import Author from "../Author"
-import Title from "../Title"
-import Rating from "../Rating"
 import Button from "../Button"
+import Image from "../Image"
+import Rating from "../Rating"
+import Title from "../Title"
 
-const CourseItem = ({ title, rating, author }) => {
+const CourseItem = ({ imgSrc, title, rating, author }) => {
 	return (
-		<Container>
-			<Title title={title} />
+		<Section>
+			<Image imgSrc={imgSrc} />
+			<Title title={title} style={{ textAlign: "center" }} />
 			<CourseMainDetails>
 				<Rating rating={rating} />
 				<Author author={author} />
@@ -23,11 +25,11 @@ const CourseItem = ({ title, rating, author }) => {
 					padding: "0.5rem",
 				}}
 			/>
-		</Container>
+		</Section>
 	)
 }
 
-const Container = styled.div`
+const Section = styled.div`
 	width: 100%;
 	display: flex;
 	align-items: center;

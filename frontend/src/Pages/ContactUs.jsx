@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styled, { css } from 'styled-components'
 import emailjs from 'email-js'
-import Button from '../Components/Button'
+import Button from '../Components/Button/Button'
 import Header from '../Components/Header/Header'
 
 const ContactUs = () => {
@@ -89,7 +89,7 @@ const ContactUs = () => {
 }
 
 const sharedStyles = css`
-  background-color: #eee;
+  /* background-color: #eee; */
   height: 40px;
   border-radius: 5px;
   border: 1px solid #ddd;
@@ -104,13 +104,14 @@ const StyledFormWrapper = styled.div`
   align-items: center;
   padding: 0 20px;
   margin: 3rem;
+  background-color: linear-gradient(to right, #65dfc9, #6cdbeb);
 `
 
 const StyledForm = styled.form`
   width: 100%;
   max-width: 100%;
   padding: 2rem;
-  background-color: #fff;
+  background-color: white;
   border-radius: 1rem;
   box-sizing: border-box;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
@@ -131,7 +132,7 @@ const StyledTextArea = styled.textarea`
 `
 const StyledButton = styled.button`
   display: block;
-  background-color: var(--midnightdark);
+  background-color: red;
   color: #fff;
   font-size: 0.9rem;
   border: 0;
