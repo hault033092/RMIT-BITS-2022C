@@ -19,6 +19,7 @@
     "react-scripts": "5.0.1",
     "react18-input-otp": "^1.1.1",
     "styled-components": "^5.3.6",
+    "survey-react-ui": "^1.9.64",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

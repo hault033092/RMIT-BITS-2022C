@@ -4,10 +4,11 @@ import AccountInfo from './AccountInfo'
 import Home from './Home'
 import Payment from './Payment'
 import SignUp from './SignUp'
-import Survey from './Survey'
+import Survey from './SurveyPage'
 import CourseInfo from './CourseInfo'
 import ContactUs from './ContactUs'
 import Signin from './Signin'
+import { SurveyPage } from 'survey-react-ui'
 
 const Pages = () => {
   return (
@@ -22,6 +23,7 @@ const Pages = () => {
       <Route path='/payment' element={<Payment />} />
       <Route path='/courseinfo' element={<CourseInfo />} />
       <Route path='/contactus' element={<ContactUs />} />
+      <Route path='/surveypage' element={<SurveyPage />} />
     </Routes>
   )
 }
