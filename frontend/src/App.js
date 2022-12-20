@@ -7,6 +7,7 @@ import Home from './Pages/Home'
 import Signin from './Pages/Signin'
 import User from './Pages/User'
 import CourseList from './Pages/CourseList'
+<<<<<<< Updated upstream
 import Pages from './Pages/Pages'
 import Footer from './Components/Footer/Footer'
 import styled, { createGlobalStyle } from 'styled-components'
@@ -23,6 +24,23 @@ const App = () => {
       <Pages />
       <Footer />
     </>
+=======
+import SignUp from './Pages/SignUp'
+import CourseContentText from './Components/CourseInfo/CourseContentText'
+import IeltsTextLearner from './Pages/IeltsTextLearner';
+
+const App = () => {
+  return (
+    <div>
+      <SignUp/>
+      <CourseInfo />
+      <ContactUs/>
+      <Header/>
+      <Signin/>
+      <CourseList />
+      <IeltsTextLearner/>
+    </div>
+>>>>>>> Stashed changes
   )
 }
 
