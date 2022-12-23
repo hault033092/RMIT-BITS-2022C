@@ -22,7 +22,7 @@ const App = () => {
       <ContactUs/>
       <Header/>
       <Signin/>
-      <CourseList />
+      <CourseList/>
       <IeltsTextLearner/>
     </div>
   )
