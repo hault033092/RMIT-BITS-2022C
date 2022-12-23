@@ -1,22 +1,48 @@
 import React from 'react'
 import { useCallback } from 'react';
-import 'survey-core/modern.min.css';
+import 'survey-core/defaultV2.css';
 //import modern theme from survey js
 import { StylesManager, Model } from 'survey-core';
 import { Survey } from 'survey-react-ui';
 //apply modern styled theme from modern css
-StylesManager.applyTheme("modern")
+StylesManager.applyTheme("defaultV2")
+
+const creatorOptions = {
+  showLogicTab: true,
+  isAutoSave: true
+};
 
 const surveyJson = {
   elements: [{
-    name: "FirstName",
-    title: "Enter your first name:",
-    type: "text"
+    name: "Hyperactiveness",
+    title: "On a scale of 1 to 10, how hyperactive are you?",
+    type: "rating",
+    "isRequired": true,
+     "rateMin": 0,
+     "rateMax": 10
   }, {
-    name: "LastName",
-    title: "Enter your last name:",
-    type: "text"
-  }]
+    name: "Concentration",
+    title: "How long can you concentrate on the screen?",
+    type: "checkbox",
+    "isRequired": true,
+    "choices": [
+      "10 minutes",
+      "20 minutes",
+      "30 minutes",
+      "40 minutes",
+      "50 minutes",
+      "60 minutes or more"
+     ]
+  },
+  {
+    name: "preference",
+    title: "On a scale of 1 to 5, 1 being unlikely and 5 being likey, how much do you prefer to learn via videos or text?",
+    type: "rating",
+    "isRequired": true,
+    "ratemin": 0,
+    "ratemax": 10
+  }
+]
 }
 
 const SurveyPage = () => {
