@@ -1,16 +1,15 @@
 import React from 'react'
 import { useCallback } from 'react';
 import 'survey-core/defaultV2.css';
+import Header from '../Components/Header/Header';
 //import modern theme from survey js
 import { StylesManager, Model } from 'survey-core';
 import { Survey } from 'survey-react-ui';
 //apply modern styled theme from modern css
 StylesManager.applyTheme("defaultV2")
 
-const creatorOptions = {
-  showLogicTab: true,
-  isAutoSave: true
-};
+//add survey ID. After handshake, return survey ID as user ID
+const SURVEY_ID = 1;
 
 const surveyJson = {
   elements: [{
@@ -47,18 +46,39 @@ const surveyJson = {
 
 const SurveyPage = () => {
   const survey = new Model(surveyJson);
-  const alertResults = useCallback((sender) => {
-    const results = JSON.stringify(sender.data);
-    alert(results);
-    // saveSurveyResults(
-    //   "https://your-web-service.com/" + SURVEY_ID,
-    //   sender.data
-    // )
+
+  //Alerting the survey result to the alert popup window
+  // const alertResults = useCallback((sender) => {
+  //   const results = JSON.stringify(sender.data);
+  //   alert(results);
+  // }, []);
+
+  //Upon completing survey results, call for saveSurveyResults to save the data 
+  const surveyComplete = useCallback((sender) => {
+    saveSurveyResults(
+      "https://your-web-service.com/" + SURVEY_ID,
+      sender.data
+    )
   }, []);
 
-  survey.onComplete.add(alertResults);
+  survey.onComplete.add(saveSurveyResults);
 
-  return <Survey model={survey} />;
+  //Define save Survey Results function
+  function saveSurveyResults(url, json) {
+    const request = new XMLHttpRequest();
+    request.open('POST', url);
+    request.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
+    request.addEventListener('load', () => {
+      // Handle "load"
+    });
+    request.addEventListener('error', () => {
+      // Handle "error"
+    });
+    request.send(JSON.stringify(json));
+  }
+
+
+  return <Survey model={survey} />
 }
 
 export default SurveyPage
