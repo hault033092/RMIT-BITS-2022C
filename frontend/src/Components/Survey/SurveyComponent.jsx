@@ -22,7 +22,7 @@ const surveyJson = {
   }, {
     name: "Concentration",
     title: "How long can you concentrate on the screen?",
-    type: "checkbox",
+    type: "radiogroup",
     "isRequired": true,
     "choices": [
       "10 minutes",
@@ -48,6 +48,14 @@ const surveyJson = {
     "isRequired": true,
     "mininumRateDescription": "Not Satisfied",
     "maximumRateDescription": "Completely satisfied"
+  },
+  {
+    "type": "rating",
+    "name": "concentration",
+    "title": "On a scale of 1 to 5, how preferable it is for you to study online?",
+    "isRequired": true,
+    "minimumRateDescription": "Not Satisfied",
+    "maximumRateDescription": "Completely Preferable"
   }
 ]
 }
