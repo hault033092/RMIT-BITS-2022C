@@ -9,6 +9,7 @@ import CourseInfo from './CourseInfo'
 import ContactUs from './ContactUs'
 import Signin from './Signin'
 import { SurveyPage } from 'survey-react-ui'
+import IELTSquiz from '../Components/Quizzes/IELTSquiz'
 
 const Pages = () => {
   return (
@@ -24,6 +25,7 @@ const Pages = () => {
       <Route path='/courseinfo' element={<CourseInfo />} />
       <Route path='/contactus' element={<ContactUs />} />
       <Route path='/surveypage' element={<SurveyPage />} />
+      <Route path='/ieltsquiz' element={<IELTSquiz />} />
     </Routes>
   )
 }

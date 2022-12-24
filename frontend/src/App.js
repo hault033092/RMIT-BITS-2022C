@@ -12,10 +12,12 @@ import CourseContentText from './Components/CourseInfo/CourseContentText'
 import IeltsTextLearner from './Pages/IeltsTextLearner';
 import { createGlobalStyle } from 'styled-components'
 import SurveyPage from './Pages/SurveyPage'
+import IELTSquiz from './Components/Quizzes/IELTSquiz'
 
 const App = () => {
   return (
     <div>
+      <IELTSquiz/>
       <SurveyPage/>
       <SignUp/>
       <CourseInfo />
