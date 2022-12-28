@@ -43,7 +43,22 @@ const quizJson = {
             ],
             correctAnswer: "An animal that lives and be active during the day"
         }]
-    }],
+    },
+        {
+        elements: [{
+            type: "radiogroup",
+            name: "EnvironmentalVocab4",
+            title: "What is the antonym of \"diurnal\"",
+            choicesOrder: "random",
+            choices: [
+                "nocturnal",
+                "aquatic",
+                "extraterrestial",
+                "marine"
+            ],
+            correctAnswer: "nocturnal"
+        }]
+    }], 
     completedHtml: "<h4>You got <b>{correctAnswers}</b> out of <b>{questionCount}</b> correct answers.</h4>",
     completedHtmlOnCondition: [{
     expression: "{correctAnswers} == 0",
