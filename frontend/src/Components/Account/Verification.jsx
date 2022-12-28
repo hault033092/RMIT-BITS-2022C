@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import styled from 'styled-components'
-import emailjs from '@emailjs/browser'
+import emailjs from 'email-js'
 import OtpInput from 'react18-input-otp'
 import axios from 'axios'
 import { useNavigate, useLocation } from 'react-router-dom'

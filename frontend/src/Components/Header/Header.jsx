@@ -1,5 +1,4 @@
-import React, { useState } from 'react'
-import { useRef } from 'react'
+import React, { useState, useRef } from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 import ParticepsLogo from '../../assets/particeps_final_logo.png'
@@ -10,11 +9,11 @@ import { useOnClickOutside } from '../../hooks/useOnClickOutside'
 
 const Header = () => {
   const [open, setOpen] = useState(false)
-  const node = useRef()
-  useOnClickOutside(node, () => setOpen(false))
+  // const node = useRef()
+  useOnClickOutside(() => setOpen(false))
 
   return (
-    <>
+    <div>
       <Container>
         <HeaderLeft>
           <Links path={'/'} pageName={'CONTACT US'} />
@@ -30,17 +29,16 @@ const Header = () => {
         </HeaderCenter>
         <HeaderRight>
           <Links path={'/contactus'} pageName={'CONTACT US'} />
-          <Links path={'/contactus'} pageName={'CONTACT US'} />
+          <Links path={'/login'} pageName={'LOG IN'} />
         </HeaderRight>
       </Container>
-      {/* <BurgerContainer ref={open}>
+      <BurgerContainer>
         <Hamburger open={open} setOpen={setOpen} />
-      </BurgerContainer> */}
-
-      {/* <HiddenNavContainer ref={open}>
+      </BurgerContainer>
+      <HiddenNavContainer>
         <HiddenNav open={open} setOpen={setOpen} />
-      </HiddenNavContainer> */}
-    </>
+      </HiddenNavContainer>
+    </div>
   )
 }
 
@@ -51,6 +49,8 @@ const Container = styled.div`
   align-items: center;
   height: 8rem;
   width: 100%;
+  z-index: 999;
+  background-color: white;
 `
 
 const HeaderLeft = styled.div`

@@ -1,6 +1,5 @@
-import { bool } from 'prop-types'
 import React from 'react'
-
+import { bool } from 'prop-types'
 import styled from 'styled-components'
 
 const HiddenNav = ({ open }) => {
@@ -20,36 +19,27 @@ HiddenNav.propTypes = {
 const StyledMenu = styled.nav`
   position: absolute;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
   background: gray;
-  height: 80vh;
+  height: 1vh;
+  width: 100%;
   text-align: left;
-  padding: 7rem;
-  top: 1;
-  right: 0;
+  padding: 1rem;
+  top: 6rem;
+  z-index: -1;
+  /* right: 0; */
   transition: transform 0.3s ease-in-out;
-  transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(100%)')};
-
-  @media (min-width: 1300px) {
-    width: 100%;
-    display: none;
-  }
+  transform: ${({ open }) => (open ? 'translateY(100%)' : 'translateY(0)')};
 
   a {
-    font-size: 2rem;
+    font-size: 1rem;
     text-transform: uppercase;
-    padding: 2rem 0;
     font-weight: bold;
     letter-spacing: 0.5rem;
     color: black;
     text-decoration: none;
     transition: color 0.3s linear;
-
-    @media (max-width: 1300px) {
-      font-size: 1.5rem;
-      text-align: center;
-    }
 
     &:hover {
       color: black;

@@ -9,23 +9,26 @@ import User from './Pages/User'
 import CourseList from './Pages/CourseList'
 import SignUp from './Pages/SignUp'
 import CourseContentText from './Components/CourseInfo/CourseContentText'
-import IeltsTextLearner from './Pages/IeltsTextLearner';
+import IeltsTextLearner from './Pages/IeltsTextLearner'
 import { createGlobalStyle } from 'styled-components'
 import SurveyPage from './Pages/SurveyPage'
-import IELTSquiz from './Components/Quizzes/IELTSquiz'
+import Footer from './Components/Footer/Footer'
+import Pages from './Pages/Pages'
 
 const App = () => {
   return (
     <div>
-      <IELTSquiz/>
-      <SurveyPage/>
+      {/* <SurveyPage/>
       <SignUp/>
       <CourseInfo />
       <ContactUs/>
       <Header/>
       <Signin/>
-      <CourseList/>
-      <IeltsTextLearner/>
+      <CourseList />
+      <IeltsTextLearner/> */}
+      <Header />
+      <Pages />
+      <Footer />
     </div>
   )
 }
