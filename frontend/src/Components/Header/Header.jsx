@@ -49,7 +49,7 @@ const Container = styled.div`
   align-items: center;
   height: 8rem;
   width: 100%;
-  z-index: 999;
+  z-index: 0;
   background-color: white;
 `
 

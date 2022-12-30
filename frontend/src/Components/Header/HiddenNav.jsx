@@ -22,11 +22,11 @@ const StyledMenu = styled.nav`
   justify-content: space-around;
   align-items: center;
   background: gray;
-  height: 1vh;
+  height: 4vh;
   width: 100%;
   text-align: left;
-  padding: 1rem;
-  top: 6rem;
+  /* padding: 1rem; */
+  top: 4.8rem;
   z-index: -1;
   /* right: 0; */
   transition: transform 0.3s ease-in-out;

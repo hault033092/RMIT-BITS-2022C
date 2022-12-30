@@ -16,9 +16,9 @@ router.post('/signup', async (req, res) => {
   const emailExist = await User.findOne({ email: req.body.email })
   if (emailExist) return res.status(400).send('Email exist!')
 
-  //Validate password
-  const passwordExist = await User.findOne({ password: req.body.password })
-  if (passwordExist) return res.status(400).send('Password exist!')
+  // //Validate password
+  // const passwordExist = await User.findOne({ password: req.body.password })
+  // if (passwordExist) return res.status(400).send('Password exist!')
 
   //Hash password
   const salt = await bcrypt.genSalt(10)

@@ -19,7 +19,9 @@ Hamburger.propTypes = {
 
 const StyledBurger = styled.button`
   display: flex;
-  right: 2rem;
+  position: absolute;
+  top: 8.3rem;
+  left: 0;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
@@ -30,7 +32,7 @@ const StyledBurger = styled.button`
   border-radius: 10px;
   cursor: pointer;
   padding: 0.5rem;
-  margin: 2rem;
+  /* margin: 2rem; */
   /* z-index: 10; */
 
   &:focus {
@@ -39,7 +41,6 @@ const StyledBurger = styled.button`
 
   div {
     display: block;
-    position: absolute;
     width: 1.5rem;
     height: 0.2rem;
     background: black;
