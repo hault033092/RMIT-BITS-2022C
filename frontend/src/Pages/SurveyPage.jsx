@@ -8,9 +8,7 @@ import Footer from '../Components/Footer/Footer'
 const SurveyPage = () => {
   return (
     <>
-      <Header/>
       <SurveyComponents/>
-      <Footer/>
     </>
  
   )

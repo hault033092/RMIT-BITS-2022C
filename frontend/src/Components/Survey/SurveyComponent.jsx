@@ -12,17 +12,29 @@ StylesManager.applyTheme("defaultV2")
 const SURVEY_ID = 1;
 
 const surveyJson = {
-  elements: [{
-    name: "Hyperactiveness",
-    title: "On a scale of 1 to 10, how hyperactive are you?",
-    type: "rating",
+  "logoPosition": "right",
+  "completedHtml": "<h3>Thank you for your time taking the Particeps Survey!</h3>",
+  "completedHtmlOnCondition": [
+  {
+   "expression": "{Hyperactiveness} >= 6",
+   "html": "<h2>Thank you for your feedback</h2> <h3>You are a visual learner.</h3>"
+  },
+  {
+   "expression": "{Hyperactiveness} <= 5",
+   "html": "<h2>Thank you for your feedback</h2> <h4>You are a text learner</h4>"
+  }
+ ],
+  elements: [ {
+    "type": "rating",
+    "name": "question1",
+    "title": "On a scale of 1 to 5, 1 being not being able to at all and 10 being complete capable of visualize reading passages, how clearly can you conjure images in your head when you read?",
     "isRequired": true,
-     "rateMin": 0,
-     "rateMax": 10
+    "minimumRateDescription": "Not Capable",
+    "maximumRateDescription": "Completely capable",
   }, {
-    name: "Concentration",
-    title: "How long can you concentrate on the screen?",
-    type: "radiogroup",
+    "name": "question2",
+    "title": "How long can you concentrate on the screen?",
+    "type": "radiogroup",
     "isRequired": true,
     "choices": [
       "10 minutes",
@@ -34,28 +46,60 @@ const surveyJson = {
      ]
   },
   {
-    name: "preference",
-    title: "On a scale of 1 to 5, 1 being unlikely and 5 being likey, how much do you prefer to learn via videos or text?",
-    type: "rating",
+    "name": "question3",
+    "title": "What kind of book would you like to read for fun?",
+    "type": "radiogroup",
     "isRequired": true,
-    "ratemin": 0,
-    "ratemax": 10
+    "choices": [
+      "A book with lots of pictures in it",
+      "A book with lots of words in it",
+      "A book with word searches or crossword puzzles",
+     ]
   },
   {
-    "type": "rating",
-    "name": "satisfaction",
-    "title": "How satisfied are you with the Product?",
+    "name": "question4",
+    "title": "When you are not sure how to spell a word, what are you most likely to do?",
+    "type": "radiogroup",
     "isRequired": true,
-    "mininumRateDescription": "Not Satisfied",
-    "maximumRateDescription": "Completely satisfied"
+    "choices": [
+      "Write it down to see if it looks right",
+      "Spell it out loud to see if it sounds right",
+      "Trace the letters in the air (finger spelling)",
+     ]
   },
   {
-    "type": "rating",
-    "name": "concentration",
-    "title": "On a scale of 1 to 5, how preferable it is for you to study online?",
+    name: "question5",
+    title: " When you see the word \"cat,\" what do you do first?",
+    type: "radiogroup",
     "isRequired": true,
-    "minimumRateDescription": "Not Satisfied",
-    "maximumRateDescription": "Completely Preferable"
+    "choices": [
+      "Picture a cat in your mind",
+      "Say the word \"cat\" to yourself",
+      "Think about being with a cat (petting it or hearing it purr)",
+     ]
+  },
+  {
+    "type": "imagepicker",
+    "name": "question6",
+    "title": "Among the 4 images below, which one seems like the best interface to learn from?",
+    "choices": [
+     {
+      "value": "visualUI",
+      "imageLink": "https://surveyjs.io/Content/Images/examples/image-picker/lion.jpg"
+     },
+     {
+      "value": "visual-inclinedUI",
+      "imageLink": "https://surveyjs.io/Content/Images/examples/image-picker/giraffe.jpg"
+     },
+     {
+      "value": "hybridUI",
+      "imageLink": "https://surveyjs.io/Content/Images/examples/image-picker/panda.jpg"
+     },
+     {
+      "value": "textUI",
+      "imageLink": "https://surveyjs.io/Content/Images/examples/image-picker/camel.jpg"
+     }
+    ]
   }
 ]
 }
