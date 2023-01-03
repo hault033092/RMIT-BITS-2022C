@@ -1,17 +1,17 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-import AccountInfo from './AccountInfo'
+import AccountInfo from './AccountPages/AccountInfo'
 import Home from './Home'
 import Payment from './Payment'
-import SignUp from './SignUp'
+import SignUp from './AccountPages/SignUp'
 import Survey from './SurveyPage'
 import CourseInfo from './CourseInfo'
 import ContactUs from './ContactUs'
-import Signin from './Signin'
+import Signin from './AccountPages/Signin'
 import { SurveyPage } from 'survey-react-ui'
 import IELTSquiz from '../Components/Quizzes/IELTSquiz'
 import CourseList from './CourseList'
-import ResetPassword from './ResetPassword'
+import ResetPassword from './AccountPages/ResetPassword'
 
 const Pages = () => {
   return (

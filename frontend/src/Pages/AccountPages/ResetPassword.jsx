@@ -4,11 +4,11 @@ import axios from "axios";
 import { useNavigate, useLocation } from "react-router-dom";
 
 /* Components */
-import Button from "../Components/Button/Button";
-import { FlexContainer } from "../Components/Account/FlexContainer";
-import Input from "../Components/Account/Input";
-import AccPageTemplate from "../Components/Account/AccPageTemplate";
-import CenterModal from "../Components/CenterModal";
+import Button from "../../Components/Button/Button";
+import { FlexContainer } from "../../Components/Account/FlexContainer";
+import Input from "../../Components/Account/Input";
+import AccPageTemplate from "../../Components/Account/AccPageTemplate";
+import CenterModal from "../../Components/CenterModal";
 
 /* Styled Components */
 const SubWrapper = styled(FlexContainer)`

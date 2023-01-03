@@ -4,10 +4,10 @@ import Header from './Components/Header/Header'
 import ContactUs from './Pages/ContactUs'
 import CourseInfo from './Pages/CourseInfo'
 import Home from './Pages/Home'
-import Signin from './Pages/Signin'
+import Signin from './Pages/AccountPages/Signin'
 import User from './Pages/User'
 import CourseList from './Pages/CourseList'
-import SignUp from './Pages/SignUp'
+import SignUp from './Pages/AccountPages/SignUp'
 import CourseContentText from './Components/CourseInfo/CourseContentText'
 import IeltsTextLearner from './Pages/IeltsTextLearner'
 import { createGlobalStyle } from 'styled-components'
@@ -65,5 +65,6 @@ const GlobalStyle = createGlobalStyle`
     overflow: auto;
   }
 `
+
 
 export default App

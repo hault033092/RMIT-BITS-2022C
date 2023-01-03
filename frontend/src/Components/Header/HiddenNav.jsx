@@ -21,7 +21,11 @@ const StyledMenu = styled.nav`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: gray;
+  background: linear-gradient(
+    to right,
+    var(--teal-background),
+    var(--lightblue-background)
+  );
   height: 4rem;
   width: 100%;
   text-align: left;

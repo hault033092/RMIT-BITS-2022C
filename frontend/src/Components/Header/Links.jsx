@@ -25,7 +25,7 @@ const Link = styled(NavLink)`
     display: block;
     width: 0;
     height: 1px;
-    background: yellow;
+    background: red;
     transition: width 0.3s;
   }
 
