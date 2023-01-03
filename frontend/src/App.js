@@ -14,6 +14,8 @@ import { createGlobalStyle } from 'styled-components'
 import SurveyPage from './Pages/SurveyPage'
 import Footer from './Components/Footer/Footer'
 import Pages from './Pages/Pages'
+import Reading from './Components/TextCourses/Reading'
+
 
 const App = () => {
   return (
@@ -26,9 +28,10 @@ const App = () => {
       <Signin/>
       <CourseList />
       <IeltsTextLearner/> */}
-      <Header />
+      {/* <Header />
       <Pages />
-      <Footer />
+      <Footer /> */}
+      <Reading/>
     </div>
   )
 }
