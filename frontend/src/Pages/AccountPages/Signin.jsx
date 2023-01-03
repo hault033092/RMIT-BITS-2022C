@@ -9,6 +9,7 @@ import jwt from "jwt-decode";
 import Input from "../../Components/Account/Input";
 import Button from "../../Components/Button";
 import AccPageTemplate from "../../Components/Account/AccPageTemplate";
+import ModeToggle from "../../Components/LightDarkMode/ModeToggle";
 
 /* Styled Components */
 const StyledText = styled.p`
@@ -16,6 +17,7 @@ const StyledText = styled.p`
 	font-size: 1vw;
 	text-decoration: underline;
 	padding-top: 5%;
+	margin-bottom: 5%;
 	cursor: pointer;
 	transition: 0.25s ease-in-out;
 	&:hover {
@@ -157,6 +159,7 @@ const Signin = () => {
 			</StyledForm>
 			<StyledText onClick={_handleSignUp}>Create new account</StyledText>
 			<StyledText onClick={_handleForgotPassword}>Forgot password?</StyledText>
+			<ModeToggle/>
 		</AccPageTemplate>
 	);
 };

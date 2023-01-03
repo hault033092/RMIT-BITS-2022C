@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
-import MainCard from "../Components/CourseInfo/MainCard"
-import LearningObjectivesCard from "../Components/CourseInfo/LearningObjectivesCard"
+import MainCard from "../../Components/CourseInfo/MainCard"
+import LearningObjectivesCard from "../../Components/CourseInfo/LearningObjectivesCard"
 
 const CourseInfo = () => {
 	return (

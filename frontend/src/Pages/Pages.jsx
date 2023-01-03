@@ -5,13 +5,14 @@ import Home from './Home'
 import Payment from './Payment'
 import SignUp from './AccountPages/SignUp'
 import Survey from './SurveyPage'
-import CourseInfo from './CourseInfo'
+import CourseInfo from './CoursePages/CourseInfo'
 import ContactUs from './ContactUs'
 import Signin from './AccountPages/Signin'
 import { SurveyPage } from 'survey-react-ui'
 import IELTSquiz from '../Components/Quizzes/IELTSquiz'
-import CourseList from './CourseList'
+import CourseList from './CoursePages/CourseList'
 import ResetPassword from './AccountPages/ResetPassword'
+import ModeToggle from '../Components/LightDarkMode/ModeToggle'
 
 const Pages = () => {
   return (
@@ -29,6 +30,7 @@ const Pages = () => {
       <Route path='/ieltsquiz' element={<IELTSquiz />} />
       <Route path='/courselist' element={<CourseList />} />
       <Route path='/resetpassword' element={<ResetPassword />} />
+      <Route path='/modetoggle' element={<ModeToggle />} />
     </Routes>
   )
 }

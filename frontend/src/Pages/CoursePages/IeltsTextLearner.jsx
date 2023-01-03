@@ -1,5 +1,5 @@
 import React from "react";
-import CourseContentText from "../Components/CourseInfo/CourseContentText";
+import CourseContentText from "../../Components/CourseInfo/CourseContentText";
 import styled from "styled-components";
 
 const IeltsTextLearner = ({courseName}) => {

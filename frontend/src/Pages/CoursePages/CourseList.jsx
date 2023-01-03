@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import CourseItem from '../Components/CourseInfo/CourseItem'
-import ieltsImg from '../assets/IELTS_image.png'
-import c2Img from '../assets/Cambridge_C2_Image.png'
-import satImg from '../assets/SAT_image.png'
+import CourseItem from '../../Components/CourseInfo/CourseItem'
+import ieltsImg from '../../assets/IELTS_image.png'
+import c2Img from '../../assets/Cambridge_C2_Image.png'
+import satImg from '../../assets/SAT_image.png'
 
 const CourseList = () => {
   return (
