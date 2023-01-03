@@ -7,6 +7,7 @@ import Carousel from '../Components/Carousel/Carousel'
 import PromotedCarousel from '../Components/Carousel/PromotedCarousel'
 import TextCarousel from '../Components/Carousel/TextCarousel'
 import VisualCarousel from '../Components/Carousel/VisualCarousel'
+import CourseItem from '../Components/CourseInfo/CourseItem'
 
 const Home = () => {
   return (
@@ -38,8 +39,8 @@ const Container = styled.div`
 `
 const PromotedCourses = styled.div`
   border: 1px solid black;
-  height: 22vh;
   width: 100%;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

@@ -15,6 +15,7 @@ import SurveyPage from './Pages/SurveyPage'
 import Footer from './Components/Footer/Footer'
 import Pages from './Pages/Pages'
 import Reading from './Components/TextCourses/Reading'
+import CourseItem from './Components/CourseInfo/CourseItem'
 
 const App = () => {
   return (
