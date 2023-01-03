@@ -16,8 +16,8 @@ const Header = () => {
     <div>
       <Container>
         <HeaderLeft>
-          <Links path={'/'} pageName={'CONTACT US'} />
           <Links path={'/contactus'} pageName={'CONTACT US'} />
+          <Links path={'/survey'} pageName={'Particeps Survey'} />
         </HeaderLeft>
         <HeaderCenter>
           <NavLink to='/'>
@@ -56,7 +56,7 @@ const Container = styled.div`
 const HeaderLeft = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 15rem;
+  width: 20rem;
 `
 
 const HeaderCenter = styled.div``
