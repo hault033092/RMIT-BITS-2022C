@@ -11,6 +11,7 @@ import Signin from './Signin'
 import { SurveyPage } from 'survey-react-ui'
 import IELTSquiz from '../Components/Quizzes/IELTSquiz'
 import CourseList from './CourseList'
+import ResetPassword from './ResetPassword'
 
 const Pages = () => {
   return (
@@ -27,6 +28,7 @@ const Pages = () => {
       <Route path='/contactus' element={<ContactUs />} />
       <Route path='/ieltsquiz' element={<IELTSquiz />} />
       <Route path='/courselist' element={<CourseList />} />
+      <Route path='/resetpassword' element={<ResetPassword />} />
     </Routes>
   )
 }
