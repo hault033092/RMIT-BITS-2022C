@@ -16,9 +16,9 @@ const Container = styled.div`
   height: 4rem;
   padding: 1rem;
   margin: 2rem;
-  border-radius: 25%;
+  border-radius: 30%;
   text-align:center;
-  /* border: 1px solid black; */
+  box-shadow: 2px 4px 5px;
   &:hover{
   background-color: blue;
   transform: scale(1.2);

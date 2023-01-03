@@ -17,7 +17,7 @@ const Header = () => {
       <Container>
         <HeaderLeft>
           <Links path={'/contactus'} pageName={'CONTACT US'} />
-          <Links path={'/survey'} pageName={'Particeps Survey'} />
+          <Links path={'/survey'} pageName={'SURVEY'} />
         </HeaderLeft>
         <HeaderCenter>
           <NavLink to='/'>
@@ -29,7 +29,7 @@ const Header = () => {
         </HeaderCenter>
         <HeaderRight>
           <Links path={'/contactus'} pageName={'CONTACT US'} />
-          <Links path={'/login'} pageName={'LOG IN'} />
+          <Links path={'/login'} pageName={'ACCOUNT'} />
         </HeaderRight>
       </Container>
       <BurgerContainer>
@@ -59,7 +59,13 @@ const HeaderLeft = styled.div`
   width: 20rem;
 `
 
-const HeaderCenter = styled.div``
+const HeaderCenter = styled.div`
+  &:hover{
+    transition: 0.25s ease-in-out;
+    transform: scale(1.1);
+    opacity: 70%;
+  }
+`
 
 const HeaderRight = styled.div`
   display: flex;
