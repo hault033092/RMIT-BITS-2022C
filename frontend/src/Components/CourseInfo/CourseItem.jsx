@@ -30,8 +30,10 @@ const CourseItem = ({ imgSrc, title, rating, author }) => {
 }
 
 const Section = styled.div`
-  width: 100%;
+  width: 70%;
+  height: 30vh;
   display: flex;
+  border: 1px solid black;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;

@@ -35,15 +35,13 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 100vh;
 `
 const PromotedCourses = styled.div`
-  border: 1px solid black;
   width: 100%;
-  height: 60vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 `
 

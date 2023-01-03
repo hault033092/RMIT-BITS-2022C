@@ -13,7 +13,7 @@ const PromotedCarousel = () => {
         perPage: 4,
         arrows: true,
         pagination: true,
-        gap: '3rem',
+        gap: '5rem',
         autoScroll: {
           pauseOnFocus: true,
           pauseOnHover: true,
@@ -47,6 +47,8 @@ const PromotedCarousel = () => {
 
 const CarouselContainer = styled(Splide)`
   width: 100%;
+  height: 50vh;
+
   /* img {
     width: 150px;
     height: 150px;
