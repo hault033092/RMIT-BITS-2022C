@@ -10,9 +10,24 @@ const Links = ({ pageName, path }) => {
   )
 }
 
-const Container = styled.div``
+const Container = styled.div`
+  background-color: red;
+  width: 15rem;
+  height: 4rem;
+  padding: 1rem;
+  margin: 2rem;
+  border-radius: 25%;
+  text-align:center;
+  /* border: 1px solid black; */
+  &:hover{
+  background-color: blue;
+  transform: scale(1.2);
+  transition: 0.25s ease-in-out;
+  }
+`
 
 const Link = styled(NavLink)`
+  color: white;
   text-decoration: none;
 `
 

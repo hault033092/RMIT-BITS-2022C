@@ -21,6 +21,7 @@ const StyledText = styled.p`
 	&:hover {
 		color: red;
 		font-size:1.2vw;
+		text-decoration: overline;
 	}
 `;
 
