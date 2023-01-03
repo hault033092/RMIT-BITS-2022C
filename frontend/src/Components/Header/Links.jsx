@@ -10,25 +10,32 @@ const Links = ({ pageName, path }) => {
   )
 }
 
-const Container = styled.div`
-  background-color: red;
-  width: 15rem;
-  height: 4rem;
-  padding: 1rem;
-  margin: 2rem;
-  border-radius: 30%;
-  text-align:center;
-  box-shadow: 2px 4px 5px;
-  &:hover{
-  background-color: blue;
-  transform: scale(1.2);
-  transition: 0.25s ease-in-out;
-  }
-`
+const Container = styled.div``
 
 const Link = styled(NavLink)`
-  color: white;
+  margin: 0 0.75rem;
   text-decoration: none;
+  color: var(--theme-golden);
+  display: inline-block;
+  font-family: var(--font-main);
+  font-size: medium;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: yellow;
+    transition: width 0.3s;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+
+  &.active::after {
+    width: 100%;
+  }
 `
 
 export default Links

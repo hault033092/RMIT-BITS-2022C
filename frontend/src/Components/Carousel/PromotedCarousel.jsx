@@ -13,6 +13,8 @@ const PromotedCarousel = () => {
         pagination: true,
         drag: 'free',
         gap: '3rem',
+        autoplay: true,
+        speed: '1',
       }}
     >
       <SplideSlide>

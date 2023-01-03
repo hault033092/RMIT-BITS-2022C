@@ -16,10 +16,10 @@ import Footer from './Components/Footer/Footer'
 import Pages from './Pages/Pages'
 import Reading from './Components/TextCourses/Reading'
 
-
 const App = () => {
   return (
     <div>
+      <GlobalStyle />
       {/* <SurveyPage/>
       <SignUp/>
       <CourseInfo />
