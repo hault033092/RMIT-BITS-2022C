@@ -12,11 +12,16 @@ import AccPageTemplate from "../Components/Account/AccPageTemplate";
 
 /* Styled Components */
 const StyledText = styled.p`
-	color: #ffffff;
+	color: black;
 	font-size: 1vw;
 	text-decoration: underline;
 	padding-top: 5%;
 	cursor: pointer;
+	transition: 0.25s ease-in-out;
+	&:hover {
+		color: red;
+		font-size:1.2vw;
+	}
 `;
 
 const StyledForm = styled.form`
