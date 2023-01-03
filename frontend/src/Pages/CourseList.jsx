@@ -56,7 +56,11 @@ const Container = styled.div`
 	grid-template-columns: 1fr;
 	gap: 2rem;
 	padding: 2rem;
-	background: linear-gradient(to right, #65dfc9, #6cdbeb);
+	background: linear-gradient(
+		to right,
+		var(--teal-background),
+		var(--lightblue-background)
+	);
 
 	@media screen and (min-width: 600px) {
 		grid-template-columns: 1fr 1fr;

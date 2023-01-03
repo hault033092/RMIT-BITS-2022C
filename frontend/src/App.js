@@ -27,7 +27,7 @@ const App = () => {
       <Header/>
       <Signin/>
       <CourseList />
-      <IeltsTextLearner/> */}
+    <IeltsTextLearner/> */}
       <Header />
       <Pages />
       <Footer />
@@ -49,7 +49,8 @@ const GlobalStyle = createGlobalStyle`
   --font-main: 'Vidaloka', serif;
 
   //Colors
- 
+  --teal-background: #65dfc9;
+  --lightblue-background: #6cdbeb;
 
   //View sizes
   --small-view: 1300px;
