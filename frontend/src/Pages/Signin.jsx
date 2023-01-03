@@ -125,7 +125,7 @@ const Signin = () => {
 	};
 
 	const _handleForgotPassword = e => {
-		navigation("/forgotPassword", { state: { mode: "forgotPassword" } });
+		navigation("/resetpassword", { state: { mode: "forgotPassword" } });
 	};
 
 	return (
