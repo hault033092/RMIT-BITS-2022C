@@ -1,8 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Splide, SplideSlide } from '@splidejs/react-splide'
+import { AutoScroll } from '@splidejs/splide-extension-auto-scroll'
 import '@splidejs/splide/dist/css/splide.min.css'
 import testImg from '../../assets/IELTS_image.png'
+import CourseItem from '../CourseInfo/CourseItem'
 
 const TextCarousel = () => {
   return (
@@ -11,33 +13,33 @@ const TextCarousel = () => {
         perPage: 4,
         arrows: true,
         pagination: true,
-        drag: 'free',
-        gap: '5rem',
+        gap: '3rem',
+        autoScroll: {
+          pauseOnFocus: true,
+          pauseOnHover: true,
+          rewind: true,
+          speed: 1,
+        },
       }}
+      extensions={{ AutoScroll }}
     >
       <SplideSlide>
-        <p>Test Course</p>
-        <img src={testImg} alt='' />
+        <CourseItem />
       </SplideSlide>
       <SplideSlide>
-        <p>Test Course</p>
-        <img src={testImg} alt='' />
+        <CourseItem />
       </SplideSlide>
       <SplideSlide>
-        <p>Test Course</p>
-        <img src={testImg} alt='' />
+        <CourseItem />
       </SplideSlide>
       <SplideSlide>
-        <p>Test Course</p>
-        <img src={testImg} alt='' />
+        <CourseItem />
       </SplideSlide>
       <SplideSlide>
-        <p>Test Course</p>
-        <img src={testImg} alt='' />
+        <CourseItem />
       </SplideSlide>
       <SplideSlide>
-        <p>Test Course</p>
-        <img src={testImg} alt='' />
+        <CourseItem />
       </SplideSlide>
     </CarouselContainer>
   )
