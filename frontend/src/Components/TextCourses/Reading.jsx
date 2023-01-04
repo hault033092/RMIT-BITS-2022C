@@ -3,10 +3,15 @@ import styled from "styled-components";
 import CourseName from "./CourseName";
 import TestType from "./TestType";
 import { ReadingQuestion } from "./ReadingQuestion";
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
 const Reading = () => {
     return(
         <div>
+            <br></br>
+            <br></br>
+            <br></br>
             <CourseName courseName={"Ielts"}/>
             <TestType testType={"Reading"}/>
             <ReadingContent>
