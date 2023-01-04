@@ -10,7 +10,7 @@ const PromotedCarousel = () => {
   return (
     <CarouselContainer
       options={{
-        perPage: 4,
+        perPage: 3,
         arrows: true,
         pagination: true,
         gap: '5rem',

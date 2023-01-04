@@ -13,6 +13,7 @@ import IELTSquiz from '../Components/Quizzes/IELTSquiz'
 import CourseList from './CoursePages/CourseList'
 import ResetPassword from './AccountPages/ResetPassword'
 import ModeToggle from '../Components/LightDarkMode/ModeToggle'
+import Reading from '../Components/TextCourses/Reading'
 
 const Pages = () => {
   return (
@@ -31,6 +32,7 @@ const Pages = () => {
       <Route path='/courselist' element={<CourseList />} />
       <Route path='/resetpassword' element={<ResetPassword />} />
       <Route path='/modetoggle' element={<ModeToggle />} />
+      <Route path='/reading' element={<Reading />} />
     </Routes>
   )
 }

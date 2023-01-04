@@ -30,10 +30,10 @@ const App = () => {
       <Signin/>
       <CourseList />
     <IeltsTextLearner/> */}
-      {/* <Header />
+      <Header />
       <Pages />
-      <Footer /> */}
-      <Reading/>
+      <Footer />
+      {/* <Reading/> */}
     </div>
   )
 }
