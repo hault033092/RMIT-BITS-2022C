@@ -18,6 +18,7 @@ const Container = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding-top: 1rem;
 	height: 100vh;
 	background: #ee0979;
 	background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);
