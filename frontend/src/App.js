@@ -53,7 +53,7 @@ const GlobalStyle = createGlobalStyle`
 `
 
 const PagesContainer = styled.div`
-  padding: 5rem 0 5rem 0;
+  padding: 7rem 0 7rem 0;
 `
 
 export default App

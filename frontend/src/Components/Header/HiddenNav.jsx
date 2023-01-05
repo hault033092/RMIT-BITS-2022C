@@ -18,24 +18,26 @@ HiddenNav.propTypes = {
 }
 
 const StyledMenu = styled.nav`
-  /* position: absolute; */
+  position: absolute;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: linear-gradient(
+  border: 1px solid black;
+  /* background: linear-gradient(
     to right,
     var(--teal-background),
     var(--lightblue-background)
-  );
+  ); */
   height: 4rem;
   width: 100%;
   text-align: left;
   /* padding: 1rem; */
-  top: 2;
-  z-index: -1;
+  top: 1;
+  /* z-index: 0 */
   /* right: 0; */
-  transition: transform 0.3s ease-in-out;
-  transform: ${({ open }) => (open ? 'translateY(0)' : 'translateY(-100%)')};
+  transition: transform 0.3s linear;
+  transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(-100%)')};
+  /* display: ${({ open }) => (open ? 'flex' : 'none')}; */
 
   a {
     font-size: 1rem;
