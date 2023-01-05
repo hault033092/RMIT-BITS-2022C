@@ -44,11 +44,11 @@ const GlobalStyle = createGlobalStyle`
     /* background: var(--theme-navyviolet); */
     min-height: 100vh;
     overflow: auto;
-    background: linear-gradient(
+    /* background: linear-gradient(
 		to right,
 		var(--teal-background),
 		var(--lightblue-background)
-	)
+	) */
   }
 `
 
