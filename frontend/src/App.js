@@ -4,15 +4,26 @@ import Header from './Components/Header/Header'
 import { createGlobalStyle } from 'styled-components'
 import Footer from './Components/Footer/Footer'
 import Pages from './Pages/Pages'
+import Reading from './Components/TextCourses/Reading'
+import CourseItem from './Components/CourseInfo/CourseItem'
+import { ReadingQuestion } from './Components/TextCourses/ReadingQuestion'
 
 const App = () => {
   return (
     <div>
       <GlobalStyle />
-     
+      {/* <SurveyPage/>
+      <SignUp/>
+      <CourseInfo />
+      <ContactUs/>
+      <Header/>
+      <Signin/>
+      <CourseList />
+    <IeltsTextLearner/> */}
       <Header />
       <Pages />
       <Footer />
+      {/* <Reading/> */}
     </div>
   )
 }
