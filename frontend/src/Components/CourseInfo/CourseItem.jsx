@@ -1,4 +1,5 @@
 import React from "react"
+import { useNavigate } from "react-router-dom"
 import styled from "styled-components"
 import Author from "../Author"
 import Button from "../Button"
@@ -7,6 +8,8 @@ import Rating from "../Rating"
 import Title from "../Title"
 
 const CourseItem = ({ imgSrc, title, rating, author }) => {
+	const navigate = useNavigate()
+
 	return (
 		<Section>
 			<Image imgSrc={imgSrc} />
@@ -24,14 +27,15 @@ const CourseItem = ({ imgSrc, title, rating, author }) => {
 					color: "#ffffff",
 					padding: "0.5rem",
 				}}
+				onClick={() => navigate("/courseinfo")}
 			/>
 		</Section>
 	)
 }
 
 const Section = styled.div`
-	width: 70%;
-	height: 30vh;
+	width: 100%;
+	// height: 30vh;
 	display: flex;
 	border: 1px solid black;
 	align-items: center;

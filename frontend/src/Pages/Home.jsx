@@ -36,7 +36,7 @@ const Container = styled.div`
 `
 const PromotedCourses = styled.div`
 	padding: 5rem 0 0 0;
-	// height: 50vh;
+	height: 80vh;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -47,7 +47,7 @@ const PromotedCourses = styled.div`
 const FeaturedText = styled.div`
 	padding: 5rem 0 0 0;
 	border: 1px solid black;
-	// height: 50vh;
+	height: 80vh;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -58,7 +58,7 @@ const FeaturedText = styled.div`
 const FeaturedVisual = styled.div`
 	padding: 5rem 0 0 0;
 	border: 1px solid black;
-	// height: 50vh;
+	height: 80vh;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
