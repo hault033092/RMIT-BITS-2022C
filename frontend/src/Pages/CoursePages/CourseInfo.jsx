@@ -25,7 +25,7 @@ const Container = styled.div`
 	background: linear-gradient(
 		to right,
 		var(--teal-background),
-		var(--lighblue-background)
+		var(--lightblue-background)
 	);
 `
 
