@@ -1,7 +1,7 @@
 import React from 'react'
 import './app.css'
 import Header from './Components/Header/Header'
-import { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 import Footer from './Components/Footer/Footer'
 import Pages from './Pages/Pages'
 
@@ -10,7 +10,9 @@ const App = () => {
     <div>
       <GlobalStyle />
       <Header />
-      <Pages />
+      <PagesContainer>
+        <Pages />
+      </PagesContainer>
       <Footer />
     </div>
   )
@@ -39,11 +41,19 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: Arial, Helvetica, sans-serif;
-    background: var(--theme-navyviolet);
+    /* background: var(--theme-navyviolet); */
     min-height: 100vh;
     overflow: auto;
+    background: linear-gradient(
+		to right,
+		var(--teal-background),
+		var(--lightblue-background)
+	)
   }
 `
 
+const PagesContainer = styled.div`
+  padding: 5rem 0 5rem 0;
+`
 
 export default App

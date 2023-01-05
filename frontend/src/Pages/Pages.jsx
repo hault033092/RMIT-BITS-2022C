@@ -48,7 +48,6 @@ const Pages = () => {
       <Route path='/ReviewIELTSQuiz' element={<ReviewIELTSQuiz />} />
       <Route path='/ReviewSATQuiz' element={<ReviewSATQuiz />} />
       <Route path='/ReviewC2Quiz' element={<ReviewC2Quiz />} />
-
     </Routes>
   )
 }

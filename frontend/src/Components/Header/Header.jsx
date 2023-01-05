@@ -43,14 +43,14 @@ const Header = () => {
 }
 
 const Container = styled.div`
-  border: 1px solid black;
+  /* position: absolute; */
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 8rem;
+  height: 10rem;
   width: 100%;
-  z-index: 0;
-  background-color: white;
+  z-index: 5;
+  background-color: transparent;
 `
 
 const HeaderLeft = styled.div`
@@ -60,7 +60,7 @@ const HeaderLeft = styled.div`
 `
 
 const HeaderCenter = styled.div`
-  &:hover{
+  &:hover {
     transition: 0.25s ease-in-out;
     transform: scale(1.1);
     opacity: 70%;

@@ -18,7 +18,7 @@ HiddenNav.propTypes = {
 }
 
 const StyledMenu = styled.nav`
-  position: absolute;
+  /* position: absolute; */
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -30,8 +30,8 @@ const StyledMenu = styled.nav`
   height: 4rem;
   width: 100%;
   text-align: left;
-  padding: 1rem;
-  top: 1;
+  /* padding: 1rem; */
+  top: 2;
   z-index: -1;
   /* right: 0; */
   transition: transform 0.3s ease-in-out;
