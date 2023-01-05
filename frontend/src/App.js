@@ -17,6 +17,7 @@ import Pages from './Pages/Pages'
 import Reading from './Components/TextCourses/Reading'
 import CourseItem from './Components/CourseInfo/CourseItem'
 import { ReadingQuestion } from './Components/TextCourses/ReadingQuestion'
+import ReadingVisual from './Components/VisualCourses/ReadingVisual'
 
 const App = () => {
   return (
@@ -30,9 +31,9 @@ const App = () => {
       <Signin/>
       <CourseList />
     <IeltsTextLearner/> */}
-      <Header />
-      <Pages />
-      <Footer />
+      {/* <Header /> */}
+      <ReadingVisual/>
+      {/* <Footer /> */}
       {/* <Reading/> */}
     </div>
   )
