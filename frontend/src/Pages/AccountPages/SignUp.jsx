@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import AccPageTemplate from '../../Components/Account/AccPageTemplate'
 import Verification from '../../Components/Account/Verification'
 import CreateAccount from '../../Components/Account/Verification'
+import ModeToggle from '../../Components/LightDarkMode/ModeToggle'
 
 const SignUp = () => {
   const [confirmedEmail, setConfirmedEmail] = useState('s123456@rmit.edu.vn')
@@ -28,6 +29,7 @@ const SignUp = () => {
           setIsSpinner={setIsVisible}
         />
       )}
+      <ModeToggle/>
     </AccPageTemplate>
   )
 }

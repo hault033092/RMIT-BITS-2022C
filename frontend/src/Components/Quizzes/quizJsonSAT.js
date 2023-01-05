@@ -1,4 +1,4 @@
-const quizJsonSAT = {
+export const quizJsonSAT = {
     "title": "SAT vocabulary test",
     "showProgressBar": "bottom",
     "showTimerPanel": "top",
@@ -28,9 +28,9 @@ const quizJsonSAT = {
       "elements": [{
         "type": "radiogroup",
         "name": "question1",
-        "title": "What does \"diurnal\" mean?",
+        "title": "What does \"nocturnal\" mean?",
         "choices": [ "active during the day", "active during the night", "both", "none of the above" ],
-        "correctAnswer": "active during the day",
+        "correctAnswer": "active during the night",
         "score": 2
       }]
     }, {
@@ -38,17 +38,17 @@ const quizJsonSAT = {
         "type": "radiogroup",
         "name": "question2",
         "score": 2,
-        "title": "What is the correct word that describes \"a type of vision at the edge of one's eyes\"",
-        "correctAnswer": "peripheral vision",
+        "title": "What is the correct word that describes \"to prove something wrong\"?",
+        "correctAnswer": "debunk",
         "choices": [{
-          "value": "peripheral vision",
-          "text": "peripheral vision"
+          "value": "debunk",
+          "text": "debunk"
         }, {
-          "value": "central vision",
-          "text": "central vision"
+          "value": "reaffirm",
+          "text": "reaffirm"
         }, {
-          "value": "shortsighted vision",
-          "text": "shortsighted vision"
+          "value": "derive",
+          "text": "derive"
         }]
       }]
     }, {
@@ -56,8 +56,8 @@ const quizJsonSAT = {
         "type": "rating",
         "name": "question3",
         "score": 2,
-        "title": "Which number represents \"bicentennial\"?",
-        "correctAnswer": 200,
+        "title": "Which number represents \"centennial\"?",
+        "correctAnswer": 100,
         "rateValues": [ 50, 100, 200, 300, 400 ]
       }]
     }, {
@@ -65,32 +65,32 @@ const quizJsonSAT = {
         "type": "boolean",
         "name": "question4",
         "score": 2,
-        "title": "\"alleviate\" and \"aggrevate\" are synonyms.",
+        "title": "\"regurgitate\" and \"disgorge\" are synonyms.",
         "labelTrue": "True",
         "labelFalse": "False",
-        "correctAnswer": false
+        "correctAnswer": true
       }]
     }, {
       "elements": [{
         "type": "image",
-        "name": "logging",
-        "imageLink": "https://www.arachnys.com/wp-content/uploads/2021/07/logging-1200x900.jpg"
+        "name": "defenestration",
+        "imageLink": "https://images.squarespace-cdn.com/content/v1/5a18683b64b05f9f4adeb4c7/1573751295270-GI2UFOQCYACMMRI2F5PT/defenestrations-of-prague-featured.jpg?format=1000w"
       }, {
         "type": "radiogroup",
         "name": "question5",
         "score": 2,
         "startWithNewLine": false,
-        "title": "What is the picture depicting?",
-        "correctAnswer": "logging",
+        "title": "What is the word that best fit the action carried out in the picture?",
+        "correctAnswer": "defenestration",
         "choices": [{
-          "value": "deforestation",
-          "text": "deforestation"
+          "value": "cheers",
+          "text": "cheers"
         }, {
-          "value": "logging",
-          "text": "logging"
+          "value": "defenestration",
+          "text": "defenestration"
         }, {
-          "value": "replanting trees",
-          "text": "replanting trees"
+          "value": "toasting",
+          "text": "toasting"
         }]
       }]
     }],

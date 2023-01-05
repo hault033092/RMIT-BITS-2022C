@@ -1,4 +1,4 @@
-import { particeps_logo } from "../../assets/particeps_final_logo_adobe_express.svg"
+
 
 export const quizJson = {
     "title": "IELTS vocabulary test",

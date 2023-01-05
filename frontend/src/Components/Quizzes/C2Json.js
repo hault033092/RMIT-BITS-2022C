@@ -56,9 +56,9 @@ export const C2Json = {
         "type": "rating",
         "name": "question3",
         "score": 2,
-        "title": "Which number represents \"centennial\"?",
-        "correctAnswer": 100,
-        "rateValues": [ 50, 100, 200, 300, 400 ]
+        "title": "Every which week(s) represent(s) a \"forthnight\"?",
+        "correctAnswer": 2,
+        "rateValues": [ 1, 2, 3, 4, 5 ]
       }]
     }, {
       "elements": [{
@@ -75,6 +75,7 @@ export const C2Json = {
           "name": "animals",
           "title": "Which picture depicts a \"mongoose\"?",
           "isRequired": true,
+          "correctAnswer": "this fearless bastard",
           "choices": [
             {
               "value": "lion",
@@ -98,7 +99,7 @@ export const C2Json = {
             }
           ],
           "showLabel": true,
-          "multiSelect": true
+          "multiSelect": false
         }]
     }
     ],
