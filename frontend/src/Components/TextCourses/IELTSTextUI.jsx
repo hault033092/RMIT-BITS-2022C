@@ -1,12 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import CourseName from "./CourseName";
-import TestType from "./TestType";
+import CourseName from "../TextCourses/CourseName"
+import TestType from "../TextCourses/TestType";
 import { ReadingQuestion } from "./ReadingQuestion";
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
 
-const Reading = () => {
+const IELTSTextUI = () => {
     return(
         <div>
             <br></br>
@@ -62,4 +60,4 @@ const ReadingTitle = styled.h3`
     text-align: center;
 `
 
-export default Reading;
+export default IELTSTextUI

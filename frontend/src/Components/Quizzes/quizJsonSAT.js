@@ -1,71 +1,101 @@
 const quizJsonSAT = {
-    showTimerPanel: "top",
-    showTimerPanelMode: "all",
-    showProgressBar: "bottom",
-    maxTimeToFinishPage: 10,
-    maxTimeToFinish: 25,
-    startSurveyText: "Start Quiz",
-    title: "SAT vocabulary",
-    pages: [{
-        elements: [{
-            type: "radiogroup",
-            name: "question1",
-            title: "What is an antonym of \"abase?\"",
-            choices: [
-                "humble", "uplift", "humiliate", "demean"
-            ],
-            correctAnswer: "uplift"
-        }]
+    "title": "SAT vocabulary test",
+    "showProgressBar": "bottom",
+    "showTimerPanel": "top",
+    "maxTimeToFinishPage": 10,
+    "maxTimeToFinish": 25,
+    "completedHtmlOnCondition": [{
+      "expression": "{totalScore} > 14",
+      "html":
+        "You got {totalScore} out of {maxScore} points.</br></br>Congratulation! You did great!"
     }, {
-        elements: [{
-            type: "radiogroup",
-            name: "question2",
-            title: "Which of the following words collocates with \"waiting\"?",
-            choicesOrder: "random",
-            choices: [
-                "interminable", "foul", "idle", "deceased"
-            ],
-            correctAnswer: "interminable"
-        }]
+      "expression": "{totalScore} > 7",
+      "html":
+        "You got {totalScore} out of {maxScore} points.</br></br>Well Done! <i>Your focus determines your reality.</i> And this is the way you passed the quiz."
     }, {
-        elements: [{
-            type: "radiogroup",
-            name: "question3",
-            title: "What is a \bdiurnal animal?",
-            choicesOrder: "random",
-            choices: [
-                "An animal that lives and be active during the night",
-                "An animal that lives and be active during the day",
-                "An animal that sleeps during the day",
-                "An animal that sleeps during the night"
-            ],
-            correctAnswer: "An animal that lives and be active during the day"
+      "expression": "{totalScore} <= 7",
+      "html":
+        "You got {totalScore} out of {maxScore} points.</br></br><i>In my experience</i>, as Obi-Wan Kenobi said, <i>there's no such thing as luck.</i>"
+    }],
+    "pages": [{
+      "name": "startPage",
+      "elements": [{
+        "type": "html",
+        "name": "welcomeMsg",
+        "html": "<b>Take this challenging quiz to find out how well you know your IELTS words.</b></br></br><i>May the IELTS gods be with you.</i></br><img src={ particeps_logo } width='100%' height='auto'/>\n"
+      }]
+    }, {
+      "elements": [{
+        "type": "radiogroup",
+        "name": "question1",
+        "title": "What does \"diurnal\" mean?",
+        "choices": [ "active during the day", "active during the night", "both", "none of the above" ],
+        "correctAnswer": "active during the day",
+        "score": 2
+      }]
+    }, {
+      "elements": [{
+        "type": "radiogroup",
+        "name": "question2",
+        "score": 2,
+        "title": "What is the correct word that describes \"a type of vision at the edge of one's eyes\"",
+        "correctAnswer": "peripheral vision",
+        "choices": [{
+          "value": "peripheral vision",
+          "text": "peripheral vision"
+        }, {
+          "value": "central vision",
+          "text": "central vision"
+        }, {
+          "value": "shortsighted vision",
+          "text": "shortsighted vision"
         }]
-    },
-        {
-        elements: [{
-            type: "radiogroup",
-            name: "question4",
-            title: "What is a synonym of \"alleviate\"",
-            choicesOrder: "random",
-            choices: [
-                "lessen",
-                "worsen",
-                "increase",
-                "aggravate"
-            ],
-            correctAnswer: "lessen"
+      }]
+    }, {
+      "elements": [{
+        "type": "rating",
+        "name": "question3",
+        "score": 2,
+        "title": "Which number represents \"bicentennial\"?",
+        "correctAnswer": 200,
+        "rateValues": [ 50, 100, 200, 300, 400 ]
+      }]
+    }, {
+      "elements": [{
+        "type": "boolean",
+        "name": "question4",
+        "score": 2,
+        "title": "\"alleviate\" and \"aggrevate\" are synonyms.",
+        "labelTrue": "True",
+        "labelFalse": "False",
+        "correctAnswer": false
+      }]
+    }, {
+      "elements": [{
+        "type": "image",
+        "name": "logging",
+        "imageLink": "https://www.arachnys.com/wp-content/uploads/2021/07/logging-1200x900.jpg"
+      }, {
+        "type": "radiogroup",
+        "name": "question5",
+        "score": 2,
+        "startWithNewLine": false,
+        "title": "What is the picture depicting?",
+        "correctAnswer": "logging",
+        "choices": [{
+          "value": "deforestation",
+          "text": "deforestation"
+        }, {
+          "value": "logging",
+          "text": "logging"
+        }, {
+          "value": "replanting trees",
+          "text": "replanting trees"
         }]
-    }], 
-    completedHtml: "<h4>You got <b>{correctAnswers}</b> out of <b>{questionCount}</b> correct answers.</h4>",
-    completedHtmlOnCondition: [{
-    expression: "{correctAnswers} == 0",
-    html: "<h4>Unfortunately, none of your answers are correct. Please try again.</h4>"
-  }, {
-    expression: "{correctAnswers} == {questionCount}",
-    html: "<h4>Congratulations! You answered all the questions correctly!</h4>"
-  }]
-}
+      }]
+    }],
+    "firstPageIsStarted": true
+  };
 
 
 export default quizJsonSAT

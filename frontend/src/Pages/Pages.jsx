@@ -13,9 +13,9 @@ import IELTSquiz from '../Components/Quizzes/IELTSquiz'
 import CourseList from './CoursePages/CourseList'
 import ResetPassword from './AccountPages/ResetPassword'
 import ModeToggle from '../Components/LightDarkMode/ModeToggle'
-import Reading from '../Components/TextCourses/Reading'
 import User from '../Pages/AccountPages/User'
 import AboutUs from './AboutUsPage/AboutUs'
+import IELTSTextUI from '../Components/TextCourses/IELTSTextUI'
 
 const Pages = () => {
   return (
@@ -34,7 +34,7 @@ const Pages = () => {
       <Route path='/courselist' element={<CourseList />} />
       <Route path='/resetpassword' element={<ResetPassword />} />
       <Route path='/modetoggle' element={<ModeToggle />} />
-      <Route path='/reading' element={<Reading />} />
+      <Route path='/IELTSTextUI' element={<IELTSTextUI />} />
       <Route path='/user' element={<User />} />
       <Route path='/aboutus' element={<AboutUs />} />
 
