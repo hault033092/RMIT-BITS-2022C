@@ -4,7 +4,7 @@ import Header from './Components/Header/Header'
 import { createGlobalStyle } from 'styled-components'
 import Footer from './Components/Footer/Footer'
 import Pages from './Pages/Pages'
-import Reading from './Components/TextCourses/Reading'
+import IELTSTextUI from './Components/TextCourses/IELTSTextUI'
 import CourseItem from './Components/CourseInfo/CourseItem'
 import { ReadingQuestion } from './Components/TextCourses/ReadingQuestion'
 

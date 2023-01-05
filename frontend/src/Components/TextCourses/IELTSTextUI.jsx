@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Links from "../Header/Links";
 import CourseName from "../TextCourses/CourseName"
 import TestType from "../TextCourses/TestType";
 import { ReadingQuestion } from "./ReadingQuestion";
@@ -40,6 +41,7 @@ const IELTSTextUI = () => {
             <br></br>
             <ReadingQuestion/>
             <br></br>
+            <Button><Links path={'/ieltsquiz'} pageName={'Take Quiz'} /></Button>
         </div>
     );
 }
@@ -58,6 +60,11 @@ const ReadingTitle = styled.h3`
     font-weight: 700;
     padding-bottom: 1rem;
     text-align: center;
+`
+const Button = styled.button`
+    margin-left: 4rem;
+    background-color: #5050ff;
+    border-radius: 4px;
 `
 
 export default IELTSTextUI
