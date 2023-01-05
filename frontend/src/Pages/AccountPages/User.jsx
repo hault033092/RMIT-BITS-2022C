@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
-import EnglishPackage from "../Components/Course/EnglishPackage"
-import SideBar from "../Components/Course/SideBar"
+import EnglishPackage from "../../Components/Course/EnglishPackage"
+import SideBar from "../../Components/Course/SideBar"
 
 const User = () => {
 	return (

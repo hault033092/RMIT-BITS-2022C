@@ -1,4 +1,4 @@
-import particeps_logo from "../../assets/particeps_final_logo_adobe_express.svg"
+import { particeps_logo } from "../../assets/particeps_final_logo_adobe_express.svg"
 
 export const quizJson = {
     "title": "IELTS vocabulary test",
@@ -76,7 +76,7 @@ export const quizJson = {
       "elements": [{
         "type": "image",
         "name": "logging",
-        "imageLink": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.arachnys.com%2Fillegal-logging-and-deforestation-money-does-grow-on-trees%2F&psig=AOvVaw3rit4YqIp-zns4kAOctTgr&ust=1672976306266000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCMCUucXAr_wCFQAAAAAdAAAAABAE"
+        "imageLink": "https://www.arachnys.com/wp-content/uploads/2021/07/logging-1200x900.jpg"
       }, {
         "type": "radiogroup",
         "name": "question5",
