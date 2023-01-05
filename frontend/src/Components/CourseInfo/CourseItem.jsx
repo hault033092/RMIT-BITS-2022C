@@ -1,5 +1,4 @@
 import React from "react"
-import { useNavigate } from "react-router-dom"
 import styled from "styled-components"
 import Author from "../Author"
 import Button from "../Button"
@@ -7,9 +6,7 @@ import Image from "../Image"
 import Rating from "../Rating"
 import Title from "../Title"
 
-const CourseItem = ({ imgSrc, title, rating, author }) => {
-	const navigate = useNavigate()
-
+const CourseItem = ({ imgSrc, title, rating, author, onButtonClick }) => {
 	return (
 		<Section>
 			<Image imgSrc={imgSrc} />
@@ -27,7 +24,7 @@ const CourseItem = ({ imgSrc, title, rating, author }) => {
 					color: "#ffffff",
 					padding: "0.5rem",
 				}}
-				onClick={() => navigate("/courseinfo")}
+				onClick={onButtonClick}
 			/>
 		</Section>
 	)

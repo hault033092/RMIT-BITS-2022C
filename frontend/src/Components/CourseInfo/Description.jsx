@@ -4,21 +4,29 @@ import Title from "../Title"
 import CourseDetails from "./CourseDetails"
 import CourseButtons from "./CourseButtons"
 
-const Description = () => {
+import { useNavigate } from "react-router-dom"
+
+const Description = ({
+	title,
+	subtitle,
+	price,
+	rating,
+	duration,
+	author,
+	createdDate,
+	onButtonClick,
+}) => {
 	return (
 		<Container>
-			<Title
-				title="IELTS For Beginners: An in-depth guide"
-				subtitle="The perfect course for newbies on their journey to English mastery"
-			/>
+			<Title title={title} subtitle={subtitle} />
 			<CourseDetails
-				price="$19.99"
-				rating="4.8"
-				duration="24hrs"
-				author="Nguyen Vu"
-				createdDate="Nov 9, 2022"
+				price={price}
+				rating={rating}
+				duration={duration}
+				author={author}
+				createdDate={createdDate}
 			/>
-			<CourseButtons />
+			<CourseButtons onButtonClick={onButtonClick} />
 		</Container>
 	)
 }

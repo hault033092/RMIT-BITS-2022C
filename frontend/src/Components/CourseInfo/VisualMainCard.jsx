@@ -5,20 +5,20 @@ import Thumbnail from "./Thumbnail"
 
 import { useNavigate } from "react-router-dom"
 
-const MainCard = () => {
+const VisualMainCard = () => {
 	const navigate = useNavigate()
 
 	return (
 		<Section>
 			<Description
-				title="IELTS 101: A classic representation"
+				title="IELTS 101: A visual representation"
 				subtitle="The perfect course for newbies on their journey to English mastery"
 				price="$19.99"
 				rating="4.8"
 				duration="24hrs"
 				author="Nguyen Vu"
 				createdDate="Nov 9, 2022"
-				onButtonClick={() => navigate("/IELTSTextUI")}
+				onButtonClick={() => navigate("/IELTSVisualUI")}
 			/>
 			<Thumbnail />
 		</Section>
@@ -43,4 +43,4 @@ const Section = styled.div`
 	}
 `
 
-export default MainCard
+export default VisualMainCard

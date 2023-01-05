@@ -9,7 +9,11 @@ import c2Img from "../../assets/Cambridge_C2_Image.png"
 import ieltsImg from "../../assets/IELTS_image.png"
 import satImg from "../../assets/SAT_image.png"
 
+import { useNavigate } from "react-router-dom"
+
 const TextCarousel = () => {
+	const navigate = useNavigate()
+
 	return (
 		<CarouselContainer
 			options={{
@@ -30,49 +34,55 @@ const TextCarousel = () => {
 			<SplideSlide>
 				<CourseItem
 					imgSrc={c2Img}
-					title="C2 For Beginners: An in-depth guide"
+					title="C2 101: A classic representation"
 					rating="4.8"
 					author="Nguyen Vu"
+					onButtonClick={() => navigate("/courseinfo")}
 				/>
 			</SplideSlide>
 			<SplideSlide>
 				<CourseItem
 					imgSrc={ieltsImg}
-					title="IELTS For Beginners: An in-depth guide"
+					title="IELTS 101: A classic representation"
 					rating="4.8"
 					author="Nguyen Vu"
+					onButtonClick={() => navigate("/courseinfo")}
 				/>
 			</SplideSlide>
 			<SplideSlide>
 				<CourseItem
 					imgSrc={satImg}
-					title="SAT For Beginners: An in-depth guide"
+					title="SAT 101: A classic representation"
 					rating="4.8"
 					author="Nguyen Vu"
+					onButtonClick={() => navigate("/courseinfo")}
 				/>
 			</SplideSlide>
 			<SplideSlide>
 				<CourseItem
 					imgSrc={c2Img}
-					title="C2 For Beginners: An in-depth guide"
+					title="C2 Intermediate: A classic representation"
 					rating="4.8"
 					author="Nguyen Vu"
+					onButtonClick={() => navigate("/courseinfo")}
 				/>
 			</SplideSlide>
 			<SplideSlide>
 				<CourseItem
 					imgSrc={ieltsImg}
-					title="IELTS For Beginners: An in-depth guide"
+					title="IELTS Intermediate: A classic representation"
 					rating="4.8"
 					author="Nguyen Vu"
+					onButtonClick={() => navigate("/courseinfo")}
 				/>
 			</SplideSlide>
 			<SplideSlide>
 				<CourseItem
 					imgSrc={satImg}
-					title="SAT For Beginners: An in-depth guide"
+					title="SAT Intermediate: A classic representation"
 					rating="4.8"
 					author="Nguyen Vu"
+					onButtonClick={() => navigate("/courseinfo")}
 				/>
 			</SplideSlide>
 		</CarouselContainer>

@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Button from "../Button"
 
-const CourseButtons = () => {
+const CourseButtons = ({ onButtonClick }) => {
 	return (
 		<Container>
 			<Button
@@ -14,6 +14,7 @@ const CourseButtons = () => {
 					color: "#ffffff",
 					padding: "0.5rem",
 				}}
+				onClick={onButtonClick}
 			/>
 			<Button
 				title="Buy Now"
@@ -24,6 +25,7 @@ const CourseButtons = () => {
 					color: "#ffffff",
 					padding: "0.5rem",
 				}}
+				onClick={onButtonClick}
 			/>
 		</Container>
 	)
