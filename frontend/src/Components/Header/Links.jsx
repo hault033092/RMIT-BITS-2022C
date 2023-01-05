@@ -15,7 +15,7 @@ const Container = styled.div``
 const Link = styled(NavLink)`
   margin: 0 0.75rem;
   text-decoration: none;
-  color: var(--theme-golden);
+  color: black;
   display: inline-block;
   font-family: var(--font-main);
   font-size: medium;

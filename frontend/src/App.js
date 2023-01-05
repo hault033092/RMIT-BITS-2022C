@@ -1,23 +1,12 @@
 import React from 'react'
 import './app.css'
 import Header from './Components/Header/Header'
-import ContactUs from './Pages/ContactUs'
-import CourseInfo from './Pages/CoursePages/CourseInfo'
-import Home from './Pages/Home'
-import Signin from './Pages/AccountPages/Signin'
-import User from './Pages/User'
-import CourseList from './Pages/CoursePages/CourseList'
-import SignUp from './Pages/AccountPages/SignUp'
-import CourseContentText from './Components/CourseInfo/CourseContentText'
-import IeltsTextLearner from './Pages/CoursePages/IeltsTextLearner'
 import { createGlobalStyle } from 'styled-components'
-import SurveyPage from './Pages/SurveyPage'
 import Footer from './Components/Footer/Footer'
 import Pages from './Pages/Pages'
 import Reading from './Components/TextCourses/Reading'
 import CourseItem from './Components/CourseInfo/CourseItem'
 import { ReadingQuestion } from './Components/TextCourses/ReadingQuestion'
-import ReadingVisual from './Components/VisualCourses/ReadingVisual'
 
 const App = () => {
   return (
@@ -31,9 +20,9 @@ const App = () => {
       <Signin/>
       <CourseList />
     <IeltsTextLearner/> */}
-      {/* <Header /> */}
-      <ReadingVisual/>
-      {/* <Footer /> */}
+      <Header />
+      <Pages />
+      <Footer />
       {/* <Reading/> */}
     </div>
   )
