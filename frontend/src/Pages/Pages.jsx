@@ -18,6 +18,7 @@ import IELTSTextUI from '../Components/TextCourses/IELTSTextUI'
 import IELTSVisualUI from '../Components/VisualCourses/IELTSVisualUI'
 import C2Quiz from '../Components/Quizzes/C2quiz'
 import SATquiz from '../Components/Quizzes/SATquiz'
+import ReviewIELTSQuiz from '../Components/Quizzes/ReviewIELTSQuiz'
 
 const Pages = () => {
   return (
@@ -42,6 +43,7 @@ const Pages = () => {
       <Route path='/IELTSVisualUI' element={<IELTSVisualUI />} />
       <Route path='/C2Quiz' element={<C2Quiz />} />
       <Route path='/SATQuiz' element={<SATquiz />} />
+      <Route path='/ReviewIELTSQuiz' element={<ReviewIELTSQuiz />} />
 
     </Routes>
   )
