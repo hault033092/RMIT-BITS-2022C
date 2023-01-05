@@ -75,7 +75,7 @@ Button.defaultProps = {
 	style: {
 		margin: "10px 0",
 		padding: "0.8vh 1vw",
-		width: "100%",
+		width: "50%",
 		height: "auto",
 		fontSize: "1vw",
 		fontWeight: "500",

@@ -22,11 +22,7 @@ const Container = styled.div`
 	// background-color: rgba(0, 150, 255, 0.65);
 	// background-color: #89cff0;
 	// background: linear-gradient(#7cfc00, #0096ff);
-	background: linear-gradient(
-		to right,
-		var(--teal-background),
-		var(--lightblue-background)
-	);
+	/* background: white; */
 `
 
 export default CourseInfo

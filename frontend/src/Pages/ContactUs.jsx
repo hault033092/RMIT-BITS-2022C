@@ -110,9 +110,9 @@ const StyledFormWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 20px;
+  padding: 2rem;
   margin: 3rem;
-  background-color: linear-gradient(to right, #65dfc9, #6cdbeb);
+  /* background-color: linear-gradient(to right, #65dfc9, #6cdbeb); */
 `
 
 const StyledForm = styled.form`

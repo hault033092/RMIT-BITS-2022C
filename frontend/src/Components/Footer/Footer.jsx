@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import ParticepsLogo from '../../assets/particeps_final_logo_adobe_express.svg'
+import ParticepsLogo from '../../assets/particeps_final_logo.png'
 
 const Footer = () => {
   return (
