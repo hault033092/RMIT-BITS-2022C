@@ -1,13 +1,14 @@
 import React from 'react'
 import { bool } from 'prop-types'
 import styled from 'styled-components'
+import Links from './Links'
 
 const HiddenNav = ({ open }) => {
   return (
     <StyledMenu open={open}>
-      <a href='/'>About us</a>
-      <a href='/'>Pricing</a>
-      <a href='/'>Contact</a>
+      <Links path={'/aboutus'} pageName={'About Us'} />
+      <Links path={'/courseinfo'} pageName={'About Us'} />
+      <Links path={'/IELTSquiz'} pageName={'Quiz'} />
     </StyledMenu>
   )
 }
