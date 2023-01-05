@@ -17,7 +17,7 @@ const Header = () => {
       <Container>
         <HeaderLeft>
           <Links path={'/contactus'} pageName={'CONTACT US'} />
-          <Links path={'/survey'} pageName={'SURVEY'} />
+          <Links path={'/aboutus'} pageName={'ABOUT PARTICEPS'} />
         </HeaderLeft>
         <HeaderCenter>
           <NavLink to='/'>
@@ -28,7 +28,7 @@ const Header = () => {
           </NavLink>
         </HeaderCenter>
         <HeaderRight>
-          <Links path={'/contactus'} pageName={'CONTACT US'} />
+          <Links path={'/survey'} pageName={'SURVEY'} />
           <Links path={'/login'} pageName={'ACCOUNT'} />
         </HeaderRight>
       </Container>
