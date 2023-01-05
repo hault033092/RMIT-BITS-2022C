@@ -6,9 +6,9 @@ import Links from './Links'
 const HiddenNav = ({ open }) => {
   return (
     <StyledMenu open={open}>
+      <Links path={'/courselist'} pageName={'Course List'} />
       <Links path={'/aboutus'} pageName={'About Us'} />
-      <Links path={'/courseinfo'} pageName={'About Us'} />
-      <Links path={'/IELTSquiz'} pageName={'Quiz'} />
+      <Links path={'/contactus'} pageName={'Contact Us'} />
     </StyledMenu>
   )
 }
@@ -22,12 +22,11 @@ const StyledMenu = styled.nav`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border: 1px solid black;
-  /* background: linear-gradient(
+  background: linear-gradient(
     to right,
     var(--teal-background),
     var(--lightblue-background)
-  ); */
+  );
   height: 4rem;
   width: 100%;
   text-align: left;

@@ -35,32 +35,32 @@ const Container = styled.div`
   align-items: center;
 `
 const PromotedCourses = styled.div`
-  /* height: 80vh; */
+  height: 50vh;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 `
 
 const FeaturedText = styled.div`
-  padding: 5rem 0 0 0;
-  height: 80vh;
+  height: 50vh;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  /* padding-top: 10rem; */
 `
 
 const FeaturedVisual = styled.div`
-  padding: 5rem 0 0 0;
-  height: 80vh;
+  height: 50vh;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  /* padding-top: 10rem; */
 `
 
 export default Home
