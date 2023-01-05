@@ -5,15 +5,15 @@ const quizJsonSAT = {
     "maxTimeToFinishPage": 10,
     "maxTimeToFinish": 25,
     "completedHtmlOnCondition": [{
-      "expression": "{totalScore} > 14",
+      "expression": "{totalScore} > 8",
       "html":
         "You got {totalScore} out of {maxScore} points.</br></br>Congratulation! You did great!"
     }, {
-      "expression": "{totalScore} > 7",
+      "expression": "{totalScore} > 6",
       "html":
         "You got {totalScore} out of {maxScore} points.</br></br>Well Done! <i>Your focus determines your reality.</i> And this is the way you passed the quiz."
     }, {
-      "expression": "{totalScore} <= 7",
+      "expression": "{totalScore} <= 4",
       "html":
         "You got {totalScore} out of {maxScore} points.</br></br><i>In my experience</i>, as Obi-Wan Kenobi said, <i>there's no such thing as luck.</i>"
     }],
@@ -22,7 +22,7 @@ const quizJsonSAT = {
       "elements": [{
         "type": "html",
         "name": "welcomeMsg",
-        "html": "<b>Take this challenging quiz to find out how well you know your IELTS words.</b></br></br><i>May the IELTS gods be with you.</i></br><img src={ particeps_logo } width='100%' height='auto'/>\n"
+        "html": "<b>Take this challenging quiz to find out how well you know your IELTS words.</b></br></br><i>May the IELTS gods be with you.</i></br><img src= https://media.tenor.com/oBUzdVQLHV8AAAAd/beerus.gif width='100%' height='auto'/>\n"
       }]
     }, {
       "elements": [{

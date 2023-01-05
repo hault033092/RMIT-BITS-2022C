@@ -6,7 +6,7 @@ import 'survey-core/defaultV2.min.css';
 import { StylesManager, Model } from 'survey-core';
 import { Survey } from 'survey-react-ui';
 
-//apply custom theme
+//apply theme
 StylesManager.applyTheme("defaultV2");
 
 // Add a custom `score` property to survey questions

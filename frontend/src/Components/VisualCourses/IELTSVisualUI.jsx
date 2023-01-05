@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import mindmap from "./mindmap.png"
 
-const ReadingVisual = () => {
+const IELTSVisualUI = () => {
     return(
         <Container>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FikAJxtVgOY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -20,4 +20,4 @@ const Container = styled.div`
 
 
 
-export default ReadingVisual;
+export default IELTSVisualUI;

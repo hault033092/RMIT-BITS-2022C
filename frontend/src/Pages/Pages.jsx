@@ -8,7 +8,6 @@ import Survey from './SurveyPage'
 import CourseInfo from './CoursePages/CourseInfo'
 import ContactUs from './ContactUs'
 import Signin from './AccountPages/Signin'
-import { SurveyPage } from 'survey-react-ui'
 import IELTSquiz from '../Components/Quizzes/IELTSquiz'
 import CourseList from './CoursePages/CourseList'
 import ResetPassword from './AccountPages/ResetPassword'
@@ -16,6 +15,9 @@ import ModeToggle from '../Components/LightDarkMode/ModeToggle'
 import User from '../Pages/AccountPages/User'
 import AboutUs from './AboutUsPage/AboutUs'
 import IELTSTextUI from '../Components/TextCourses/IELTSTextUI'
+import IELTSVisualUI from '../Components/VisualCourses/IELTSVisualUI'
+import C2Quiz from '../Components/Quizzes/C2quiz'
+import SATquiz from '../Components/Quizzes/SATquiz'
 
 const Pages = () => {
   return (
@@ -37,6 +39,9 @@ const Pages = () => {
       <Route path='/IELTSTextUI' element={<IELTSTextUI />} />
       <Route path='/user' element={<User />} />
       <Route path='/aboutus' element={<AboutUs />} />
+      <Route path='/IELTSVisualUI' element={<IELTSVisualUI />} />
+      <Route path='/C2Quiz' element={<C2Quiz />} />
+      <Route path='/SATQuiz' element={<SATquiz />} />
 
     </Routes>
   )

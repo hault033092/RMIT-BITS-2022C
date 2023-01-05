@@ -1,10 +1,10 @@
 import React from 'react'
 
-//import json file
-import quizJsonSAT from './quizJsonSAT'
+//import json file for schema
+import { C2Json } from './C2Json';
 
-//import survey styles
-import 'survey-core/defaultV2.min.css';
+//import surveyjs styles
+import 'survey-core/defaultV2.css';
 import { StylesManager, Model } from 'survey-core';
 import { Survey } from 'survey-react-ui';
 
@@ -16,12 +16,12 @@ StylesManager.applyTheme("defaultV2");
 
 // Add a custom `score` property to survey questions
 Serializer.addProperty("question", {
-  name: "score:number"
-  }
+    name: "score:number"
+    }
 );
 
-const SATquiz = () => {
-  const survey = new Model(quizJsonSAT);
+const C2Quiz = () => {
+    const survey = new Model(C2Json);
     function calculateMaxScore (questions) {
       var maxScore = 0;
       questions.forEach((question) => {
@@ -54,4 +54,4 @@ const SATquiz = () => {
     return (<Survey model={survey} />);
 }
 
-export default SATquiz
+export default C2Quiz

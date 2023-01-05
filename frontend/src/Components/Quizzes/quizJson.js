@@ -7,15 +7,15 @@ export const quizJson = {
     "maxTimeToFinishPage": 10,
     "maxTimeToFinish": 25,
     "completedHtmlOnCondition": [{
-      "expression": "{totalScore} > 14",
+      "expression": "{totalScore} > 8",
       "html":
         "You got {totalScore} out of {maxScore} points.</br></br>Congratulation! You did great!"
     }, {
-      "expression": "{totalScore} > 7",
+      "expression": "{totalScore} > 6",
       "html":
         "You got {totalScore} out of {maxScore} points.</br></br>Well Done! <i>Your focus determines your reality.</i> And this is the way you passed the quiz."
     }, {
-      "expression": "{totalScore} <= 7",
+      "expression": "{totalScore} <= 4",
       "html":
         "You got {totalScore} out of {maxScore} points.</br></br><i>In my experience</i>, as Obi-Wan Kenobi said, <i>there's no such thing as luck.</i>"
     }],
