@@ -9,9 +9,10 @@ import Image from "./Image";
 
 /* Data */
 import Interactive_Interface from "../../assets/illustration/Interactive_Interface.svg"
-import MainLogoSrc from "../../assets/particeps_final_logo_adobe_express.svg";
+import MainLogoSrc from "../../assets/logo-rmit.png";
 import learning_English from "../../assets/illustration/learning_English.svg";
 import Quiz from "../../assets/illustration/Quiz.svg";
+
 
 /* Styled Components */
 const MainCont = styled(FlexContainer)`
