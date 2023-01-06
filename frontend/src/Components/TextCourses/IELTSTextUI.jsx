@@ -65,6 +65,8 @@ const Button = styled.button`
     margin-left: 4rem;
     background-color: #5050ff;
     border-radius: 4px;
+    height: 40px;
+    width: 150px;
 `
 
 export default IELTSTextUI
