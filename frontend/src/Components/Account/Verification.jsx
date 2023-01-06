@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import styled from 'styled-components'
-import emailjs from 'email-js'
+import emailjs from '@emailjs/browser'
 import OtpInput from 'react18-input-otp'
 import axios from 'axios'
 import { useNavigate, useLocation } from 'react-router-dom'
@@ -30,7 +30,7 @@ const WrapperCont = styled(FlexContainer)`
 
 const StyledText = styled.p`
   width: 100%;
-  color: ${(props) => props.theme.fontColorWhite};
+  color: ${(props) => props.theme.fontColorBlack};
   font-size: 1.2vw;
   font-weight: 600;
 `
@@ -184,7 +184,7 @@ const Verification = ({ setConfirmedEmail }) => {
       <Input
         label={'Student email'}
         value={email}
-        placeholder={'Please enter your student email'}
+        placeholder={'Please enter your email'}
         maxLength={30}
         onChange={_handleEmailChange}
         onKeyPress={_sendCode}

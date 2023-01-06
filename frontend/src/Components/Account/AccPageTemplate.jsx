@@ -13,7 +13,6 @@ import MainLogoSrc from "../../assets/logo-rmit.png";
 import learning_English from "../../assets/illustration/learning_English.svg";
 import Quiz from "../../assets/illustration/Quiz.svg";
 
-
 /* Styled Components */
 const MainCont = styled(FlexContainer)`
 	width: 80vw;
@@ -38,7 +37,7 @@ const InputCont = styled(FlexContainer)`
 	width: ${props => (props.isCreateAccount ? "100%" : "70%")};
 	height: ${props => (props.isCreateAccount ? "100%" : "90%")};
 	padding: 3%;
-	background-color: ${props => props.theme.mainBlue};
+	background-color: lightblue;
 	border-radius: 30px;
 `;
 

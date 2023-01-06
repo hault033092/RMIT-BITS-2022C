@@ -5,7 +5,6 @@ import { useNavigate } from "react-router-dom";
 
 /* Components */
 import Button from "../../components/Button";
-import ProfileImg from "../../components/ProfileImg";
 import { FlexContainer } from "../../components/FlexContainer";
 import Input from "../../components/Input";
 import CenterModal from "../../components/CenterModal";
@@ -73,7 +72,7 @@ const CreateAccount = ({ studentEmail, setIsSpinner }) => {
 
 	const registerUser = async userInfo => {
 		const client = axios.create({
-			baseURL: "http://localhost:8080/api/user/register",
+			baseURL: "http://localhost:8080/api/user/signup",
 		});
 
 		setIsSpinner(true);
@@ -135,14 +134,6 @@ const CreateAccount = ({ studentEmail, setIsSpinner }) => {
 
 	return (
 		<form>
-			<FlexContainer>
-				<ProfileImg
-					src={pfImg}
-					onUploadPhoto={_handleUploadPic}
-					setIsSpinner={setIsSpinner}
-					isShowButton
-				/>
-			</FlexContainer>
 			<InputWrapper>
 				<SubWrapper>
 					<Input

@@ -53,7 +53,7 @@ const validateStudentEmail = email => {
 
 /* Data */
 const client = axios.create({
-	baseURL: "http://localhost:8080/api/user/login",
+	baseURL: "http://localhost:8080/api/user/signin",
 });
 
 const Signin = () => {

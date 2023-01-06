@@ -52,7 +52,7 @@ const StyledTextarea = styled.textarea`
 	border-radius: 10px;
 	border-width: 2px;
 	resize: none;
-	background-color: #fff;
+	background-color: black;
 	&:focus {
 		outline: none;
 	}
