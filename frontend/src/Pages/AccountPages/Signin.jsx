@@ -123,7 +123,7 @@ const Signin = () => {
 	};
 
 	const _handleSignUp = e => {
-		navigation("/signup", { state: { mode: "signUp" } });
+		navigation("/createaccount", { state: { mode: "createAccount" } });
 	};
 
 	const _handleForgotPassword = e => {

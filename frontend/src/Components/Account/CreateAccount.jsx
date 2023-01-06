@@ -14,6 +14,10 @@ const InputWrapper = styled(FlexContainer)`
 	width: 100%;
 	justify-content: space-between;
 	align-items: flex-start;
+	align-self:center;
+	border-radius: 5%;
+	padding: 3rem;
+	border-radius: 30px;
 `;
 
 const SubWrapper = styled(FlexContainer)`
@@ -55,7 +59,6 @@ const removeWhitespace = text => {
 
 const CreateAccount = ({ studentEmail, setIsSpinner }) => {
 	const email = useRef(studentEmail);
-	const [pfImg, setPfImg] = useState("");
 	const [username, setUserName] = useState("");
 	const [pwd, setPwd] = useState("");
 	const [pwdConfirm, setPwdConfirm] = useState("");
@@ -75,7 +78,7 @@ const CreateAccount = ({ studentEmail, setIsSpinner }) => {
 			baseURL: "http://localhost:8080/api/user/signup",
 		});
 
-		setIsSpinner(true);
+		// setIsSpinner(true);
 		try {
 			let response = await client
 				.post("", userInfo)
@@ -86,7 +89,7 @@ const CreateAccount = ({ studentEmail, setIsSpinner }) => {
 					setErrorMessage(error.response.data);
 				})
 				.finally(() => {
-					setIsSpinner(false);
+					// setIsSpinner(false);
 				});
 		} catch (error) {
 			console.error(error);
@@ -120,16 +123,8 @@ const CreateAccount = ({ studentEmail, setIsSpinner }) => {
 			userName: username,
 			email: email.current,
 			password: pwd,
-			gender: "No Answer",
-			bio: "No Answer",
-			major: "No Answer",
-			profileImg: pfImg,
 		};
 		registerUser(accountInfo);
-	};
-
-	const _handleUploadPic = url => {
-		setPfImg(url);
 	};
 
 	return (
@@ -139,6 +134,7 @@ const CreateAccount = ({ studentEmail, setIsSpinner }) => {
 					<Input
 						label={"Student email"}
 						value={email.current}
+						placeholder={"Please enter your username"}
 						maxLength={30}
 						isDisabled
 						isRequired
