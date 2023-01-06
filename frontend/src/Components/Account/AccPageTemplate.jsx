@@ -9,7 +9,7 @@ import Image from "./Image";
 
 /* Data */
 import Interactive_Interface from "../../assets/illustration/Interactive_Interface.svg"
-import MainLogoSrc from "../../assets/logo-rmit.png";
+// import MainLogoSrc from "../../assets/logo-rmit.png";
 import learning_English from "../../assets/illustration/learning_English.svg";
 import Quiz from "../../assets/illustration/Quiz.svg";
 
@@ -157,7 +157,6 @@ const AutoSlideshow = ({ images, delayTime }) => {
 
 /* Data */
 const imagesData = [
-	{ src: MainLogoSrc, desc: "An interactive\nlearning website" },
 	{ src: learning_English, desc: "Choose from different courses!" },
 	{ src: Interactive_Interface, desc: "Different UI\nfor visual and text learners" },
 	{
@@ -175,14 +174,14 @@ const AccPageTemplate = ({
 	return (
 		<MainCont>
 			<SideCont>
-				<Image
+				{/* <Image
 					src={MainLogoSrc}
 					alt={"Particeps Main Logo Image"}
 					style={{
 						width: "30vw",
 						height: "30vh",
 					}}
-				/>
+				/> */}
 				<AutoSlideshow images={imagesData} delayTime={4000} />
 			</SideCont>
 			<InputCont isCreateAccount={isCreateAccount}>

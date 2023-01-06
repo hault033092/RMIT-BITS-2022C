@@ -16,12 +16,10 @@ const userSchema = new mongoose.Schema(
 
     name: { type: String },
 
-    profileImg: { type: String },
-
-    role: {
-      type: String,
-      default: 'LEARNER',
-    },
+    // role: {
+    //   type: String,
+    //   default: 'LEARNER',
+    // },
 
     // Learner
     coursesTaken: [

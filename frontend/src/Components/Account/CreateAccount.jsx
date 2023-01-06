@@ -58,7 +58,8 @@ const removeWhitespace = text => {
 };
 
 const CreateAccount = ({ studentEmail, setIsSpinner }) => {
-	const email = useRef(studentEmail);
+	// const email = useRef(studentEmail);
+	const [email, setEmail] = useState("");
 	const [username, setUserName] = useState("");
 	const [pwd, setPwd] = useState("");
 	const [pwdConfirm, setPwdConfirm] = useState("");
@@ -69,9 +70,9 @@ const CreateAccount = ({ studentEmail, setIsSpinner }) => {
 	const navigation = useNavigate();
 
 	useEffect(() => {
-		setIsValid(username && pwd && pwdConfirm && !errorMessage);
+		setIsValid(email && username && pwd && pwdConfirm && !errorMessage);
 
-	}, [username, pwd, pwdConfirm, errorMessage]);
+	}, [email, username, pwd, pwdConfirm, errorMessage]);
 
 	const registerUser = async userInfo => {
 		const client = axios.create({
@@ -94,6 +95,12 @@ const CreateAccount = ({ studentEmail, setIsSpinner }) => {
 		} catch (error) {
 			console.error(error);
 		}
+	};
+
+	const _handleEmailChange = e => {
+		const refinedEmail = removeWhitespace(e.target.value);
+		setErrorMessage("");
+		setEmail(refinedEmail);
 	};
 
 	const _handleUsernameChange = e => {
@@ -120,8 +127,8 @@ const CreateAccount = ({ studentEmail, setIsSpinner }) => {
 
 	const _handleSubmit = async e => {
 		const accountInfo = {
-			userName: username,
-			email: email.current,
+			name: username,
+			email: email,
 			password: pwd,
 		};
 		registerUser(accountInfo);
@@ -133,9 +140,10 @@ const CreateAccount = ({ studentEmail, setIsSpinner }) => {
 				<SubWrapper>
 					<Input
 						label={"Student email"}
-						value={email.current}
+						value={email}
 						placeholder={"Please enter your username"}
 						maxLength={30}
+						onChange={_handleEmailChange}
 						isDisabled
 						isRequired
 					/>
