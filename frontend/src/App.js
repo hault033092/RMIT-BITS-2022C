@@ -1,3 +1,11 @@
+/***************************************************************
+*Title: SurveyJS API
+*Author: No individual author
+*Date: December 14th 2022
+* Code version: latest - apply V2 default and modern theme
+*Availability: surveyjs.io (Accessed December 14th 2022)
+****************************************************************/
+
 import React from 'react'
 import './app.css'
 import Header from './Components/Header/Header'
