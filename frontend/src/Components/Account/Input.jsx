@@ -19,7 +19,7 @@ const StyledLabel = styled.label`
 	width: 100%;
 	font-size: 1.2vw;
 	font-weight: 600;
-	color: #ffffff;
+	color: black;
 `;
 
 const StyledInput = styled.input.attrs(({ isPassword, disabled }) => ({
@@ -52,7 +52,7 @@ const StyledTextarea = styled.textarea`
 	border-radius: 10px;
 	border-width: 2px;
 	resize: none;
-	background-color: black;
+	background-color: white;
 	&:focus {
 		outline: none;
 	}

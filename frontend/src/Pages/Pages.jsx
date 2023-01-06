@@ -22,6 +22,7 @@ import SATquiz from "../Components/Quizzes/SATquiz"
 import ReviewIELTSQuiz from "../Components/Quizzes/ReviewIELTSQuiz"
 import ReviewSATQuiz from "../Components/Quizzes/ReviewSATQuiz"
 import ReviewC2Quiz from "../Components/Quizzes/ReviewC2Quiz"
+import CreateAccount from "../Components/Account/CreateAccount"
 
 const Pages = () => {
 	return (
@@ -50,6 +51,7 @@ const Pages = () => {
 			<Route path="/ReviewIELTSQuiz" element={<ReviewIELTSQuiz />} />
 			<Route path="/ReviewSATQuiz" element={<ReviewSATQuiz />} />
 			<Route path="/ReviewC2Quiz" element={<ReviewC2Quiz />} />
+			<Route path="/createaccount" element={<CreateAccount />} />
 		</Routes>
 	)
 }

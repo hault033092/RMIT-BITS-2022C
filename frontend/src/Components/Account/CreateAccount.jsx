@@ -4,10 +4,10 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 /* Components */
-import Button from "../../components/Button";
-import { FlexContainer } from "../../components/FlexContainer";
-import Input from "../../components/Input";
-import CenterModal from "../../components/CenterModal";
+import Button from "../../Components/Button/Button";
+import { FlexContainer } from "../../Components/Account/FlexContainer";
+import Input from "../../Components/Account/Input";
+import CenterModal from "../../Components/CenterModal";
 
 /* Styled Components */
 const InputWrapper = styled(FlexContainer)`
