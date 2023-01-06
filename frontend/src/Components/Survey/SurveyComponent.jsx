@@ -16,21 +16,27 @@ const surveyJson = {
   "completedHtml": "<h3>Thank you for your time taking the Particeps Survey!</h3>",
   "completedHtmlOnCondition": [
   {
-   "expression": "{Hyperactiveness} >= 6",
+   "expression": "{quesetion1} >= 'Normal. Sometimes I can others I cannot'",
    "html": "<h2>Thank you for your feedback</h2> <h3>You are a visual learner.</h3>"
   },
   {
-   "expression": "{Hyperactiveness} <= 5",
+   "expression": "{question2} >= '40 minutes'",
    "html": "<h2>Thank you for your feedback</h2> <h4>You are a text learner</h4>"
   }
  ],
   elements: [ {
-    "type": "rating",
+    "type": "radiogroup",
     "name": "question1",
-    "title": "On a scale of 1 to 5, 1 being not being able to at all and 10 being complete capable of visualize reading passages, how clearly can you conjure images in your head when you read?",
+    "title": "How clearly can you conjure images in your head when you read?",
     "isRequired": true,
-    "minimumRateDescription": "Not Capable",
-    "maximumRateDescription": "Completely capable",
+    "choices": [
+      "Not at all",
+      "Somewhat",
+      "Normal. Sometimes I can others I cannot",
+      "Usually",
+      "Very often",
+      "Always. Whenever I want to"
+     ]
   }, {
     "name": "question2",
     "title": "How long can you concentrate on the screen?",
@@ -85,19 +91,19 @@ const surveyJson = {
     "choices": [
      {
       "value": "visualUI",
-      "imageLink": "https://surveyjs.io/Content/Images/examples/image-picker/lion.jpg"
+      "imageLink": "https://i.pinimg.com/originals/49/b8/e5/49b8e5dc9b8e5b174e96b9c1c4b9232b.png"
      },
      {
       "value": "visual-inclinedUI",
-      "imageLink": "https://surveyjs.io/Content/Images/examples/image-picker/giraffe.jpg"
+      "imageLink": "https://assets.materialup.com/uploads/98b9965d-6121-4e68-9841-cd5653a34b64/dribbble.jpg"
      },
      {
       "value": "hybridUI",
-      "imageLink": "https://surveyjs.io/Content/Images/examples/image-picker/panda.jpg"
+      "imageLink": "https://ieltsfocus.com/wp-content/uploads/2017/12/reading-tips.png"
      },
      {
       "value": "textUI",
-      "imageLink": "https://surveyjs.io/Content/Images/examples/image-picker/camel.jpg"
+      "imageLink": "https://langgo.edu.vn/public/files/upload/default/images/ielts/tron-bo-10-de-thi-ielts-reading-test-download-mien-phi.jpg"
      }
     ]
   }
