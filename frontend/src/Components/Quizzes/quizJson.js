@@ -24,7 +24,7 @@ export const quizJson = {
       "elements": [{
         "type": "html",
         "name": "welcomeMsg",
-        "html": "<b>Take this challenging quiz to find out how well you know your IELTS words.</b></br></br><i>May the IELTS gods be with you.</i></br><img src={ particeps_logo } width='100%' height='auto'/>\n"
+        "html": "<b>Take this challenging quiz to find out how well you know your IELTS words.</b></br></br><i>May the IELTS gods be with you.</i></br><img src='https://cdn.dribbble.com/users/2973239/screenshots/9407464/ieltspot.gif', width='100%' height='auto'/>\n"
       }]
     }, {
       "elements": [{
